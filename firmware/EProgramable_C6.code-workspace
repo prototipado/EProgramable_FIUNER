@@ -1,0 +1,80 @@
+{
+    "folders": [
+        {
+            "path": "./drivers"
+        },
+        {
+            "path": "./projects/0_blinking"
+        },
+        {
+            "path": "./projects/1_blinking_switch"
+        },
+        {
+            "path": "projects/2_blinking_tasks"
+        },
+        {
+            "path": "./projects/x_template"
+        },
+    ],
+    "settings": {
+        "idf.portWin": "COM14",
+        "idf.flashBaudRate": "115200",
+        "idf.flashType": "JTAG",
+        "idf.adapterTargetName": "esp32c6",
+        "cmake.configureOnOpen": false,
+        "idf.svdFilePath": "${workspaceFolder}/../../esp32c6.svd",
+        "idf.openOcdConfigs": [
+            "board/esp32c6-builtin.cfg"
+        ],
+        "idf.openOcdLaunchArgs": ["-c", "set ESP_RTOS none"],
+        "files.associations": {
+            "math.h": "c",
+            "stdint.h": "c",
+            "stdbool.h": "c",
+            "gpio_mcu.h": "c",
+            "gpio.h": "c",
+            "switch.h": "c",
+            "esp_rom_sys.h": "c",
+            "lcditse0803.h": "c",
+            "timer.h": "c",
+            "gptimer.h": "c",
+            "delay_mcu.h": "c",
+            "hc_sr04.h": "c",
+            "timer_mcu.h": "c",
+            "led_strip.h": "c",
+            "freertos.h": "c",
+            "task.h": "c",
+            "semphr.h": "c",
+            "queue.h": "c",
+            "rmt.h": "c",
+            "rmt_types_legacy.h": "c",
+            "dedic_gpio.h": "c",
+            "neopixel_stripe.h": "c",
+            "analog_io_mcu.h": "c",
+            "adc_cali_scheme.h": "c",
+            "adc_continuous.h": "c",
+            "adc_cali.h": "c",
+            "dac_oneshot.h": "c",
+            "adc_oneshot.h": "c",
+            "uart_types.h": "c",
+            "array": "c",
+            "string": "c",
+            "string_view": "c",
+            "uart.h": "c",
+            "esp_intr_alloc.h": "c",
+            "led.h": "c",
+            "uart_mcu.h": "c",
+            "spi_master.h": "c",
+            "ili9341.h": "c",
+            "soc_caps.h": "c",
+            "mpu6050.h": "c",
+            "i2c_mcu.h": "c"
+        },
+    },
+    "tasks": {
+        "version": "2.0.0",
+        "tasks": [
+
+        ]
+    }
+}
