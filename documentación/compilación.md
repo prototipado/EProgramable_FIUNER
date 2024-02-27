@@ -18,7 +18,7 @@ A continuación se detallan los pasos para la descarga del repositorio de la cá
 
 3. Ejecute el siguiente comando: 
     ```
-    git clone https://github.com/albanopenalva/ElectronicaProgramable_ESP32.git
+    git clone https://github.com/prototipado/EProgramable_FIUNER.git
     ```
 
 4. A continuación se descargará el Repositorio en la carpeta correspondiente.
@@ -30,7 +30,7 @@ A continuación se detallan los pasos para la descarga del repositorio de la cá
 1. En **Visual Studio Code** seleccionar el menú File -> Open Workspace from File...
     ![workspace1](./imágenes/workspace1.png)
 
-2. Seleccione el archivo `EProgramable_C6` ubicado en `C:/Repositorios/ElectronicaProgramable_ESP32/firmware/`.
+2. Seleccione el archivo `EProgramable_C6` ubicado en `C:/Repositorios/EProgramable_FIUNER/firmware/`.
     ![workspace2](./imágenes/workspace2.png)
 
 3. Se le mostrará una ventana preguntando si confía en los autores de estos archivos. Seleccione la opción `Yes, I trust the authors`.
@@ -58,7 +58,7 @@ Para eso presione el botón ![](https://raw.githubusercontent.com/microsoft/vsco
     - sdkconfig: archivo de configuración del software del fabricante.
    
 3. Abra el archivo `c_cpp_properties.json` ubicado en `0_blinking/.vscode/` y revise que el directorio mostrado `"compilerPath"` sea correcto. 
-Esta es la ubicación del compilador (**riscv32-esp-elf-gcc.exe**), y el valor por defecto `C:\\Espressif\\tools\\riscv32-esp-elf\\esp-12.2.0_20230208\\riscv32-esp-elf\\bin\\riscv32-esp-elf-gcc.exe` puede no coincidir el directorio donde se encuentre en su equipo, 
+Esta es la ubicación del compilador (**riscv32-esp-elf-gcc.exe**), y el valor por defecto `C:\\Usuarios\\PC\\.espressif\\tools\\riscv32-esp-elf\\esp-12.2.0_20230208\\riscv32-esp-elf\\bin\\riscv32-esp-elf-gcc.exe` puede no coincidir con el directorio donde se encuentre en su equipo, 
 ya que depende de la versión de IDF instalada y de la unidad donde usted haya elegido realizar la instalación.
 Si el directorio mostrado no existe, corrijalo por el valor correcto.
 
