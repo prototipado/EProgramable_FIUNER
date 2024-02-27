@@ -1,0 +1,8 @@
+# Compile outputs
+**/build
+# Peripheral view
+.espidf.peripherals.state.json
+# Settings per project
+**/.vscode/settings.json
+
+
