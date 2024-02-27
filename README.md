@@ -15,7 +15,7 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 
 ## Enlaces de Interés
 
-* [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=190)
+* [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=455)
  
 ## Autores
 
