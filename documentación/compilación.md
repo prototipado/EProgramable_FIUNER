@@ -88,28 +88,3 @@ Además se puede observar en la barra del Explorador que se ha creado una nueva 
 	![workspace7](./imágenes/workspace7.png)
 	
 Una vez finalizada la compilación del proyecto puede continuar con el instructivo de [Grabación y Depuración](./depuración.md).
-
-## Crear proyecto nuevo
-
-1. Desde su explorador de archivos realice una copia de la carpeta `x_template` (ubicada en `C:/Repositorios/ElectronicaProgramable_ESP32/firmware/projects/`) 
-y renómbrela según el proyecto a realizar (en este ejemplo se reemplazará `x_template - copia` por `guia1_ej2`).
-
-	![proyecto1](./imágenes/proyecto1.png)
-	
-2. En **Visual Studio Code**, desde el menú `File` seleccione la opción `Add Folder to Workspace`.
-
-	![proyecto2](./imágenes/proyecto2.png)
-	
-3. Seleccione la carpeta creada.
-
-	![proyecto3](./imágenes/proyecto3.png)
-	
-4. Se le mostrará una ventana preguntando si confía en los autores de estos archivos. Seleccione la opción `Yes, I trust the authors`.
-
-5. En la barra del Explorador (izquierda de la ventana) se le mostrará el nuevo proyecto agregado.
-
-	![proyecto4](./imágenes/proyecto4.png)
-	
-6. Para comenzar a trabajar con el mismo, primero debe seleccionarlo como proyecto activo (presione el botón ![](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/file-submodule.svg) (`ESP-IDF: Current Project`) y luego seleccione `guia1_ej2`).
-
-	![proyecto5](./imágenes/proyecto5.png)

@@ -11,6 +11,7 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 1. [Instalación](./documentación/instalación.md)
 2. [Compilación](./documentación/compilación.md)
 3. [Grabación y Depuración](./documentación/depuración.md)
+3. [Proyecto nuevo](./documentación/proyecto_nuevo.md)
 4. [Detalles del Hardware](./documentación/hardware.md) 
 
 ## Enlaces de Interés

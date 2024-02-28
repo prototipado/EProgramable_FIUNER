@@ -74,3 +74,5 @@ En el mismo se muestran los mensajes enviados utilizando las funciones `printf()
 y modificar la línea `"idf.portWin": "COM14",` colocando el número de puerto COM correspondiente. 
 
     ![monitor4](./imágenes/monitor4.png)
+
+Ahora ya puede empezar a trabajar sobre un nuevo proyecto, siguiendo el instructivo [Proyecto Nuevo](./proyecto_nuevo.md).
