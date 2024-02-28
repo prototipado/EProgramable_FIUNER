@@ -1,3 +1,3 @@
 # Template
 
-Este proyecto sirve como platilla para crear nuevos proyectos siguiendo el instructivo mostrado en la sección `Crear proyecto nuevo` de la guía [Compilación](../../../documentación/compilación.md/#crear-proyecto-nuevo).
+Este proyecto sirve como platilla para crear nuevos proyectos siguiendo el instructivo [Proyecto Nuevo](../../../documentación/proyecto_nuevo.md).

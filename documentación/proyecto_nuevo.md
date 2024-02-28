@@ -28,7 +28,7 @@ y renómbrela según el proyecto a realizar (en este ejemplo se reemplazará `x_
 	![proyecto6](./imágenes/proyecto6.png)
 
 > [!IMPORTANT]
-> No repetir nombres entre proyectos distintos, ya que puede traer problemas a la hora de Depurar (el programa utilzia el nombre del proyecto para nombrar los binarios creados en el proceso de compilación).
+> No repetir nombres entre proyectos distintos, ya que puede traer problemas a la hora de Depurar (el programa utiliza el nombre del proyecto para nombrar los binarios creados en el proceso de compilación).
 
 7. Para comenzar a trabajar con el mismo, primero debe seleccionarlo como proyecto activo (presione el botón ![](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/file-submodule.svg) (`ESP-IDF: Current Project`) y luego seleccione `guia1_ej2`).
 
