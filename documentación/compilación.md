@@ -65,7 +65,7 @@ Si el directorio mostrado no existe, corrijalo por el valor correcto.
     ![workspace5](./imágenes/workspace5.png)
 
 > [!TIP] 
-> Las ubicaciones más comunes de instalación son `C:/Espressif/tools/...` y `%USERPROFILE%/.espressif/tools/...`.
+> Las ubicaciones más comunes de instalación son `C:/Espressif/tools/...` y `%USERPROFILE%/.espressif/tools/...` en **Windows** y `$HOME/.espressif/tools/...` en **Linux**.
 	
 > [!NOTE]
 > No se preocupe si el programa le muestra una advertencia en el valor de `"compileCommands"`, el mismo desaparecerá luego de la primera compilación.
