@@ -25,6 +25,10 @@ y está basada en el módulo [ESP32-C6-DevKitC-1](https://docs.espressif.com/pro
 * 1 USB - Serie (conectado a UART0)
 * 1 cargador de baterías Li-Ion/Li-Po
 
+## Drivers
+* **USB**: [FTDI Virtual COM Port Drivers](https://ftdichip.com/drivers/vcp-drivers/)
+* **UART**: [CP210x USB to UART Bridge VCP Drivers](https://www.silabs.com/developers/usb-to-uart-bridge-vcp-drivers)
+
 ## Enlaces de Interés
 * [Manual de Usuario ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf)
 * [Hoja de Datos de ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
