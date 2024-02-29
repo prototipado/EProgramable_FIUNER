@@ -9,7 +9,7 @@
 #include <stdbool.h>
 #include <stdint.h>
 
-#include "HX711.h"
+#include "hx711.h"
 
 #include <delay_mcu.h>
 
