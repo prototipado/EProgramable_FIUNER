@@ -17,6 +17,10 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 ## Enlaces de Interés
 
 * [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=455)
+* [Manual de Usuario ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf)
+* [Hoja de Datos de ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
+* [IDF API para ESP32-C6](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-reference/index.html)
+* [Guía de Usuario de ESP32-C6-DevKitC-1](https://docs.espressif.com/projects/espressif-esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html)
  
 ## Autores
 
