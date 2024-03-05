@@ -5,7 +5,6 @@ A continuación se detallan los pasos para la descarga del repositorio de la cá
 1. [Descarga de Repositorio](#Descarga-de-Repositorio)
 2. [Configuración del Espacio de Trabajo](#Configuración-del-Espacio-de-Trabajo)
 3. [Compilación](#Compilación)
-4. [Crear proyecto nuevo](#Crear-Proyecto-nuevo)
 
 ## Descarga de Repositorio
 
