@@ -86,4 +86,6 @@ Además se puede observar en la barra del Explorador que se ha creado una nueva 
     
 	![workspace7](./imágenes/workspace7.png)
 	
+---
+
 Una vez finalizada la compilación del proyecto puede continuar con el instructivo de [Grabación y Depuración](./depuración.md).

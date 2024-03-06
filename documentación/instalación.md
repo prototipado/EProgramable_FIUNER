@@ -9,6 +9,7 @@ A continuación se detallan los pasos necesarios para la instalación de estas h
 2. [Doxygen](#Doxygen)
 3. [Visual Studio Code](#Visual-Studio-Code)
 4. [ESP IDF](#ESP-IDF)
+5. [C/C++ Extension](#C/C++-Extension)
 
 ## Git
 
@@ -84,5 +85,20 @@ Para su instalación siga los siguietes pasos:
 8. La instalación demorará varios minutos. Una vez completada podrá observar un mensaje indicando que todos los ajustes han sido configurados.
 
     ![idf6](./imágenes/idf6.png)
+
+
+## C/C++ Extension
+
+La extensión de Microsoft para C y C++ agrega soporte de lenguaje para C/C++ a Visual Studio Code, incluidas funciones de edición y depuración.
+
+1. Abra la aplicación Visual Studio Code y diríjase a la vista de Extensiones:  ![](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/extensions.svg)
+
+2. Busque la extensión de C/C++.
+
+3. Presione el botón `Install`.
+
+    ![idf1](./imágenes/c-cpp.png)
+    
+---
 
 Una vez finalizada la instalación de las herramientas puede continuar con el instructivo de [Compilación](./compilación.md).
