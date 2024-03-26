@@ -9,7 +9,7 @@ A continuación se detallan los pasos necesarios para la instalación de estas h
 2. [Doxygen](#Doxygen)
 3. [Visual Studio Code](#Visual-Studio-Code)
 4. [ESP IDF](#ESP-IDF)
-5. [C/C++ Extension](#C-C++-Extension)
+5. [C/C++ Extension](#C/C++-Extension)
 
 ## Git
 
@@ -87,7 +87,7 @@ Para su instalación siga los siguietes pasos:
     ![idf6](./imágenes/idf6.png)
 
 
-## C-C++ Extension
+## C/C++ Extension
 
 La extensión de Microsoft para C y C++ agrega soporte de lenguaje para C/C++ a Visual Studio Code, incluidas funciones de edición y depuración.
 
