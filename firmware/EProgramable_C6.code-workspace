@@ -13,8 +13,11 @@
             "path": "projects/2_blinking_tasks"
         },
         {
-            "path": "./projects/x_template"
+            "path": "projects/3_blinking_timer"
         },
+        {
+            "path": "./projects/x_template"
+        }
     ],
     "settings": {
         "idf.portWin": "COM14",
