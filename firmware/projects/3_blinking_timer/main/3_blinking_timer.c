@@ -33,14 +33,14 @@ TaskHandle_t led2_task_handle = NULL;
  * @brief Función invocada en la interrupción del timer A
  */
 void FuncTimerA(void* param){
-    xTaskNotifyGive(led1_task_handle);    /* Envía una notificación a la tarea asociada al LED_1 */
+    vTaskNotifyGiveFromISR(led1_task_handle, pdFALSE);    /* Envía una notificación a la tarea asociada al LED_1 */
 }
 
 /**
  * @brief Función invocada en la interrupción del timer B
  */
 void FuncTimerB(void* param){
-    xTaskNotifyGive(led2_task_handle);    /* Envía una notificación a la tarea asociada al LED_2 */
+    vTaskNotifyGiveFromISR(led2_task_handle, pdFALSE);    /* Envía una notificación a la tarea asociada al LED_2 */
 }
 
 /**
