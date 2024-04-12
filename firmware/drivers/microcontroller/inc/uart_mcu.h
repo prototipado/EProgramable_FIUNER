@@ -78,14 +78,6 @@ uint8_t UartReadBuffer(uart_mcu_port_t port, uint8_t *data, uint16_t nbytes);
  */
 void UartSendByte(uart_mcu_port_t port, const char *data);
 
-/** @fn UartSendString(uint8_t port, uint8_t *msg)
- * @brief Envía un String a través del puerto serie.
- * @note Envía datos hasta encontrar el caracter '\0', utilizado para indicar el fin de un String.
- * @param[in] port Puerto por el que se desea enviar el dato.
- * @param[in] msg Puntero al String que se desea enviar. 
- * @retval None
- */
-
 /**
  * @brief Send a String trough serial port
  * 
