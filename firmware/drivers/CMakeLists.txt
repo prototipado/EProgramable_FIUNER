@@ -11,6 +11,8 @@ set(srcs
     "microcontroller/src/i2c_mcu.c"
     "microcontroller/src/gpio_fast_out_mcu.c"
     "microcontroller/src/analog_io_mcu.c"
+    #"microcontroller/src/ble_mcu.c"
+    "microcontroller/src/rtc_mcu.c"
     "devices/src/led.c"
     "devices/src/switch.c"
     "devices/src/lcditse0803.c"
@@ -19,9 +21,11 @@ set(srcs
     "devices/src/neopixel_stripe.c"
     "devices/src/ili9341.c"
     "devices/src/fonts.c"
+    "devices/src/icons.c"
     "devices/src/servo_sg90.c"
     "devices/src/hx711.c"
     "devices/src/mpu6050.c"
+    "devices/src/buzzer.c"
     )
 
 # Always included headers
@@ -30,4 +34,4 @@ set(includes "microcontroller/inc"
 
 idf_component_register(SRCS ${srcs}
                        INCLUDE_DIRS ${includes}
-                       REQUIRES driver esp_adc)
+                       REQUIRES driver esp_adc nvs_flash bt)
