@@ -2,7 +2,7 @@
 #define PWM_MCU_H
 /** \addtogroup Drivers_Programable Drivers Programable
  ** @{ */
-/** \addtogroup Drivers_Devices Drivers devices
+/** \addtogroup Drivers_Microcontroller Drivers microcontroller
  ** @{ */
 /** \addtogroup PWM PWM
  ** @{ */

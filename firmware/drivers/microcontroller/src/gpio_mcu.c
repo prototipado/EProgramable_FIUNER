@@ -131,5 +131,4 @@ void GPIODeinit(void){
 	
 }
 
-/** @} doxygen end group definition */
 /*==================[end of file]============================================*/
