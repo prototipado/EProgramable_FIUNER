@@ -48,15 +48,15 @@ uint16_t HcSr04ReadDistanceInCentimeters(void){
 	DelayUs(10);
 	GPIOOff(trigger_st);
 	while(!GPIORead(echo_st)){
-		DelayUs(1);
-		waiting++;
+		DelayUs(10);
+		waiting += 10;
 		if(waiting > WAIT_MAX){
 			return 0;
 		}
 	}
 	do{
-		DelayUs(1);
-		distance++;
+		DelayUs(10);
+		distance += 10;
 		if(distance > MAX_US)
 			return MAX_CM;
 	}
@@ -70,15 +70,15 @@ uint16_t HcSr04ReadDistanceInInches(void){
 	DelayUs(10);
 	GPIOOff(trigger_st);
 	while(!GPIORead(echo_st)){
-		DelayUs(1);
-		waiting++;
+		DelayUs(10);
+		waiting += 10;
 		if(waiting > WAIT_MAX){
 			return 0;
 		}
 	}
 	do{
-		DelayUs(1);
-		distance++;
+		DelayUs(10);
+		distance += 10;
 		if(distance > MAX_US)
 			return MAX_INCH;
 	}
