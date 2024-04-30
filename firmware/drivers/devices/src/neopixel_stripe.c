@@ -43,6 +43,9 @@ void NeoPixelInit(gpio_t pin, uint16_t len, neopixel_color_t *color_array){
 
 void NeoPixelAllOff(void){
     rgb_led_t led;
+	ws2812bSendRet();
+	ws2812bSendRet();
+	ws2812bSendRet();
 	for (uint16_t i = 0; i < stripe_length; i++){
 		led.red = 0;
 		led.green = 0;
@@ -67,6 +70,9 @@ void NeoPixelSetPixel(uint16_t pixel, neopixel_color_t color){
 void NeoPixelSetArray(neopixel_color_t *color_array){
     rgb_led_t led;
 	uint16_t red, green, blue;
+	ws2812bSendRet();
+	ws2812bSendRet();
+	ws2812bSendRet();
 	for (uint16_t i = 0; i < stripe_length; i++){
 		red = ((color_array[i] & RED_MSK) >> RED_OFFSET) * stripe_bright;
 		green = ((color_array[i] & GREEN_MSK) >> GREEN_OFFSET) * stripe_bright;
