@@ -8,9 +8,9 @@
  ** @{ 
  * @brief  TFT LCD RGB 240x320 ILI9341 driver
  *
- * This driver provide functions to configure and control a 240x320 pixels
- * TFT color display connected to the ESP-EDU.
- * It uses a SPI port and 3 GPIOs to communicate with the ILI9341 LCD driver chip.
+ * @note This driver provide functions to configure and control a 240x320 pixels
+ * TFT color display connected to the ESP-EDU. It uses a SPI port and 3 GPIOs to 
+ * communicate with the ILI9341 LCD driver chip.
  *
  * @author Albano Peñalva
  *
@@ -40,12 +40,13 @@
 #include <stdint.h>
 #include "spi_mcu.h"
 #include "fonts.h"
+#include "icons.h"
 /*==================[macros]=================================================*/
 /* LCD settings */
 #define ILI9341_WIDTH       240			/*!< LCD width in pixels */
 #define ILI9341_HEIGHT      320			/*!< LCD height in pixels */
 #define ILI9341_PIXEL_MAX	76800
-/* Colors */							/*	 R,   G,   B */
+/* 16bits colors (RGB565) */			/*	 R,   G,   B */
 #define ILI9341_BLACK          	0x0000  /*   0,   0,   0 */
 #define ILI9341_NAVY           	0x000F 	/*   0,   0, 128 */
 #define ILI9341_DARKGREEN      	0x03E0  /*   0, 128,   0 */
@@ -95,14 +96,14 @@ uint8_t ILI9341Init(spi_dev_t spi_dev, uint8_t gpio_dc, uint8_t gpio_rst);
  * @brief  		Draws single pixel to LCD
  * @param[in]  	x: X position for pixel
  * @param[in]  	y: Y position for pixel
- * @param[in]  	color: Color of pixel
+ * @param[in]  	color: Color of pixel (RGB565)
  * @retval 		None
  */
 void ILI9341DrawPixel(uint16_t x, uint16_t y, uint16_t color);
 
 /**
  * @brief  		Fills entire LCD with color
- * @param[in]	color: Color to be used in fill
+ * @param[in]	color: Color to be used in fill (RGB565)
  * @retval 		None
  */
 void ILI9341Fill(uint16_t color);
@@ -120,11 +121,23 @@ void ILI9341Rotate(ili9341_orientation_t orientation);
  * @param[in]  	y: Y position of top left corner
  * @param[in] 	data: Character to be displayed
  * @param[in]  	font: Pointer to used font
- * @param[in]  	foreground: Color for char
- * @param[in]  	background: Color for char background
+ * @param[in]  	foreground: Color for char (RGB565)
+ * @param[in]  	background: Color for char background (RGB565)
  * @retval		None
  */
 void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t foreground, uint16_t background);
+
+/**
+ * @brief  		Draw a single character on the LCD
+ * @param[in]  	x: X position of top left corner
+ * @param[in]  	y: Y position of top left corner
+ * @param[in] 	icon: Icon to be displayed
+ * @param[in]  	icon_font: Pointer to used font
+ * @param[in]  	foreground: Color for icon (RGB565)
+ * @param[in]  	background: Color for icon background (RGB565)
+ * @retval		None
+ */
+void ILI9341DrawIcon(uint16_t x, uint16_t y, icon_t icon, icon_font_t* icon_font, uint16_t foreground, uint16_t background);
 
 /**
  * @brief  		Draw an integer on the LCD
@@ -133,8 +146,8 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
  * @param[in] 	num: Number to be displayed
  * @param[in] 	dig: Number of digits to display
  * @param[in]  	font: Pointer to used font
- * @param[in]  	foreground: Color for char
- * @param[in]  	background: Color for char background
+ * @param[in]  	foreground: Color for char (RGB565)
+ * @param[in]  	background: Color for char background (RGB565)
  * @retval		None
  */
 void ILI9341DrawInt(uint16_t x, uint16_t y, uint32_t num, uint8_t dig, Font_t* font, uint16_t foreground, uint16_t background);
@@ -145,8 +158,8 @@ void ILI9341DrawInt(uint16_t x, uint16_t y, uint32_t num, uint8_t dig, Font_t* f
  * @param[in]  	y: Y position of top left corner of first character in string
  * @param[in]  	str: Pointer to first character
  * @param[in]  	font: Pointer to used font
- * @param[in]  	foreground: Color for string
- * @param[in]  	background: Color for string background
+ * @param[in]  	foreground: Color for string (RGB565)
+ * @param[in]  	background: Color for string background (RGB565)
  * @retval 		None
  */
 void ILI9341DrawString(uint16_t x, uint16_t y, char* str, Font_t *font, uint16_t foreground, uint16_t background);
@@ -167,7 +180,7 @@ void ILI9341GetStringSize(char* str, Font_t* font, uint16_t* width, uint16_t* he
  * @param[in]  	y0: Y coordinate of starting point
  * @param[in]  	x1: X coordinate of ending point
  * @param[in]  	y1: Y coordinate of ending point
- * @param[in]  	color: Line color
+ * @param[in]  	color: Line color (RGB565)
  * @retval[in] 	None
  */
 void ILI9341DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
@@ -178,7 +191,7 @@ void ILI9341DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_
  * @param[in]  	y0: Y coordinate of top left point
  * @param[in]  	x1: X coordinate of bottom right point
  * @param[in]  	y1: Y coordinate of bottom right point
- * @param[in]  	color: Rectangle color
+ * @param[in]  	color: Rectangle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawRectangle(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
@@ -189,7 +202,7 @@ void ILI9341DrawRectangle(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, ui
  * @param[in]  	y0: Y coordinate of top left point
  * @param[in]  	x1: X coordinate of bottom right point
  * @param[in]  	y1: Y coordinate of bottom right point
- * @param[in]  	color: Rectangle color
+ * @param[in]  	color: Rectangle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawFilledRectangle(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
@@ -199,7 +212,7 @@ void ILI9341DrawFilledRectangle(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t 
  * @param[in]  	x0: X coordinate of center circle point
  * @param[in]  	y0: Y coordinate of center circle point
  * @param[in]  	r: Circle radius
- * @param[in]  	color: Circle color
+ * @param[in]  	color: Circle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color);
@@ -209,7 +222,7 @@ void ILI9341DrawCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color);
  * @param[in]  	x0: X coordinate of center circle point
  * @param[in]  	y0: Y coordinate of center circle point
  * @param[in]  	r: Circle radius
- * @param[in]  	color: Circle color
+ * @param[in]  	color: Circle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawFilledCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color);
@@ -222,7 +235,7 @@ void ILI9341DrawFilledCircle(int16_t x0, int16_t y0, int16_t r, uint16_t color);
  * @param[in]  	y1: Y coordinate of vertex
  * @param[in]  	x2: X coordinate of vertex
  * @param[in]  	y2: Y coordinate of vertex
- * @param[in]  	color: Triangle color
+ * @param[in]  	color: Triangle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color);
@@ -235,7 +248,7 @@ void ILI9341DrawTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t
  * @param[in]  	y1: Y coordinate of vertex
  * @param[in]  	x2: X coordinate of vertex
  * @param[in]  	y2: Y coordinate of vertex
- * @param[in]  	color: Triangle color
+ * @param[in]  	color: Triangle color (RGB565)
  * @retval 		None
  */
 void ILI9341DrawFilledTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, int16_t x2, int16_t y2, uint16_t color);
@@ -252,7 +265,7 @@ void ILI9341DrawFilledTriangle(int16_t x0, int16_t y0, int16_t x1, int16_t y1, i
  * @param[in]  	pic: Pointer to first byte of picture
  * @retval 		None
  */
-void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t hieght, const uint8_t* pic);
+void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t height, const uint8_t* pic);
 
 /**
  * @brief  	De-initializes ILI9341 LCD

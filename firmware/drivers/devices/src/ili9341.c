@@ -1,49 +1,27 @@
-/*! @file ili9341.c
- * @brief  TFT LCD RGB 240x320 ILI9341 driver
- *
- * This driver provide functions to configure and control a 240x320 pixels
- * TFT color display connected to the ESP-EDU.
- * It uses a SPI port and 3 GPIOs to communicate with the ILI9341 LCD driver chip.
- *
- * @author Albano Peñalva
- *
- * @note Hardware connections:
- *
- * |   	Display		|   EDU-CIAA	|
- * |:--------------:|:--------------|
- * | 	SDO/MISO 	|	SPI_MISO	|
- * | 	LED		 	| 	3V3			|
- * | 	SCK		 	| 	SPI_SCK		|
- * | 	SDI/MOSI 	| 	SPI_MOSI	|
- * | 	DC/RS	 	| 	GPIOx		|
- * | 	RESET	 	| 	GPIOx		|
- * | 	CS		 	| 	GPIOx		|
- * | 	GND		 	| 	GND			|
- * | 	VCC		 	| 	3V3			|
- *
- * @section changelog
- *
- * |   Date	    | Description                                    |
- * |:----------:|:-----------------------------------------------|
- * | 21/11/2018 | Document creation		                         |
- *
+/**
+ * @file ili9341.c
+ * @author Albano Peñalva (albano.penalva@uner.edu.ar)
+ * @brief 
+ * @version 0.1
+ * @date 2024-01-18
+ * 
+ * @copyright Copyright (c) 2024
+ * 
  */
 
+/*==================[inclusions]=============================================*/
 #include "ili9341.h"
 #include "fonts.h"
 #include "spi_mcu.h"
 #include "gpio_mcu.h"
 #include "delay_mcu.h"
-
-/*****************************************************************************
- * Private macros/types/enumerations/variables definitions
- ****************************************************************************/
-
+/*==================[macros and definitions]=================================*/
 #define NULL 0
 
 #define SPI_BR 20000000				/*!< Frequency of sck for SPI communication */
 #define MAX_PIXEL 320*240*2			/*!< Maximum number of bytes to write on LCD */
 #define MSK_BIT16 0x8000			/*!< 16th bit mask */
+#define MSK_BIT8 0x80				/*!< 8th bit mask */
 #define MAX_VALUE_SIZE 256			/*!< Maximum length of a data array to prevent excessive use of memory */
 #define LEFT -1						/*!< Horizontal grow direction */
 #define RIGHT 1						/*!< Horizontal grow direction */
@@ -86,7 +64,7 @@
 
 #define HighByte(x) x >> 8			/*!< High byte of a 16 bits data */
 #define LowByte(x) x & 0xFF			/*!< Low byte of a 16 bits data */
-
+/*==================[typedef]================================================*/
 /**
  * @brief  Structure with LCD orientation properties
  */
@@ -104,7 +82,39 @@ typedef struct {
     uint32_t databytes; 	/*!< Number of bytes of data to transmit */
     uint8_t *data;			/*!< Pointer to data or parameters array */
 } lcd_cmd_t;
+/*==================[internal data declaration]==============================*/
 
+/*==================[internal functions declaration]=========================*/
+
+/**
+ * @brief  		Send command and parameters/data to LCD
+ * @param[in]  	data: Structure with the command and parameters/data to send
+ * @retval 		None
+ */
+void WriteLCD(lcd_cmd_t * data);
+
+/**
+ * @brief  		Define an area of frame memory where MCU can access
+ * @param[in]  	x1: Start column
+ * @param[in]  	y1: Start row
+ * @param[in]  	x2: End column
+ * @param[in]  	y2: End row
+ * @retval 		None
+ */
+void SetCursorPosition(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
+
+/**
+ * @brief  		Fill an srea of LCD with a determined color
+ * @param[in]  	x1: Start column
+ * @param[in]  	y1: Start row
+ * @param[in]  	x2: End column
+ * @param[in]  	y2: End row
+ * @param[in]	color: color
+ * @retval 		None
+ */
+void Fill(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
+
+/*==================[internal data definition]===============================*/
 /**
  * @brief Initial LCD configuration parameters
  */
@@ -172,53 +182,17 @@ spi_mcu_config_t spi_conf = {
 	.func_p = NULL,
 	.param_p = NULL };
 
-static spi_dev_t ili9341_spi;							/*!< uC SPI port */
+static spi_dev_t ili9341_spi;				/*!< uC SPI port */
 static gpio_t ili9341_dc, ili9341_rst;		/*!< uC GPIO ports to use as CS, DC and RST */
 
 static orientation_properties_t lcd_orientation = {
 		ILI9341_WIDTH,
 		ILI9341_HEIGHT,
 		ILI9341_Portrait_1
-};												/*!< Default orientation configuration */
+};	/*!< Default orientation configuration */
 
-/*****************************************************************************
- * Public types/enumerations/variables declarations
- ****************************************************************************/
+/*==================[internal functions definition]==========================*/
 
-/*****************************************************************************
- * Private functions definitions
- ****************************************************************************/
-/**
- * @brief  		Send command and parameters/data to LCD
- * @param[in]  	data: Structure with the command and parameters/data to send
- * @retval 		None
- */
-void WriteLCD(lcd_cmd_t * data);
-
-/**
- * @brief  		Define an area of frame memory where MCU can access
- * @param[in]  	x1: Start column
- * @param[in]  	y1: Start row
- * @param[in]  	x2: End column
- * @param[in]  	y2: End row
- * @retval 		None
- */
-void SetCursorPosition(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
-
-/**
- * @brief  		Fill an srea of LCD with a determined color
- * @param[in]  	x1: Start column
- * @param[in]  	y1: Start row
- * @param[in]  	x2: End column
- * @param[in]  	y2: End row
- * @param[in]	color: color
- * @retval 		None
- */
-void Fill(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color);
-
-/*****************************************************************************
- * Private functions declarations
- ****************************************************************************/
 void WriteLCD(lcd_cmd_t * data){
 	SpiInit(&spi_conf);
 	/* If command is NULL don't send command */
@@ -293,9 +267,7 @@ void Fill(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color){
 	WriteLCD(&lcd_pixel);
 }
 
-/*****************************************************************************
- * Public functions declarations
- ****************************************************************************/
+/*==================[external functions definition]==========================*/
 
 uint8_t ILI9341Init(spi_dev_t spi_dev, uint8_t gpio_dc, uint8_t gpio_rst){
 	/* SPI configuration */
@@ -378,10 +350,10 @@ void ILI9341Rotate(ili9341_orientation_t orientation){
 }
 
 void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t foreground, uint16_t background){
-	static uint16_t i, j, k;
-	static uint16_t char_row;
+	static uint32_t i, j, k;
+	static uint32_t char_row;
 	static uint16_t lcd_x, lcd_y;
-	static int32_t bytes_count;
+	static int32_t bytes_count, bytes_row;
 	static uint8_t pixel[MAX_VALUE_SIZE];
 
 	/* Set coordinates */
@@ -389,15 +361,15 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
 	lcd_y = y;
 
 	/* If at the end of a line of display, go to new line and set x to 0 position */
-	if ((lcd_x + font->FontWidth) > lcd_orientation.width)	{
-		lcd_y += font->FontHeight;
+	if ((lcd_x + font->info[data - ' '].width) > lcd_orientation.width)	{
+		lcd_y += font->font_height;
 		lcd_x = 0;
 	}
 
-	SetCursorPosition(lcd_x, lcd_y, lcd_x + font->FontWidth - 1, lcd_y + font->FontHeight - 1);
+	SetCursorPosition(lcd_x, lcd_y, lcd_x + font->info[data - ' '].width - 1, lcd_y + font->font_height - 1);
 
 	/* Number of bytes to write. We have to write 2 bytes/pixel */
-	bytes_count = font->FontHeight * font->FontWidth * 2;
+	bytes_count = font->font_height * font->info[data - ' '].width * 2;
 
 	/* Start writing LCD memory */
 	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
@@ -406,27 +378,93 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
 	/* Draw font data */
 	/* go through character rows */
 	k = 0;
-	for (i = 0; i < font->FontHeight; i++)	{
-		/* each 16bits data of a font character draws a full row of that character */
-		char_row = font->data[(data - ' ') * font->FontHeight + i];
+	for (i = 0; i < font->font_height; i++)	{
+		/* */
+		char_row = font->info[data - ' '].offset + i * ((font->info[data - ' '].width + 7) / 8);
 		/* go through character columns */
-		for (j = 0; j < font->FontWidth; j++)		{
+		bytes_row = -1;
+		for (j = 0; j < font->info[data - ' '].width; j++){
+			if(j % 8 == 0){
+				bytes_row++;
+			}
 			/* If exceed buffer size, send buffer */
-			if ((2 * j + i * font->FontWidth * 2 - k * MAX_VALUE_SIZE + 1) > MAX_VALUE_SIZE)			{
+			if ((2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE + 1) > MAX_VALUE_SIZE){
 				lcd_cmd_t lcd_pixels = {NULL, MAX_VALUE_SIZE, pixel};
 				WriteLCD(&lcd_pixels);
 				bytes_count -= MAX_VALUE_SIZE;
 				k++;
 			}
 			/* The n=FontWidth first bits of the 16bits row data draws the corresponding part of a character */
-			if (char_row & (MSK_BIT16 >> j)){
+			if (font->data[char_row + bytes_row] & (MSK_BIT8 >> (j % 8))){
 				/* if bit = 1, draw put foreground color */
-				pixel[2 * j + i * font->FontWidth * 2 - k * MAX_VALUE_SIZE] = HighByte(foreground);
-				pixel[2 * j + i * font->FontWidth * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(foreground);
+				pixel[2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE] = HighByte(foreground);
+				pixel[2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(foreground);
 			}
 			else{
-				pixel[2 * j + i * font->FontWidth * 2 - k * MAX_VALUE_SIZE] = HighByte(background);
-				pixel[2 * j + i * font->FontWidth * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(background);
+				pixel[2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE] = HighByte(background);
+				pixel[2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(background);
+			}
+		}
+	}
+	/* Send the rest of the buffer */
+	lcd_cmd_t lcd_pixels = {NULL, bytes_count, pixel};
+	WriteLCD(&lcd_pixels);
+}
+
+void ILI9341DrawIcon(uint16_t x, uint16_t y, icon_t icon, icon_font_t* icon_font, uint16_t foreground, uint16_t background){
+	static uint32_t i, j, k;
+	static uint32_t char_row;
+	static uint16_t lcd_x, lcd_y;
+	static int32_t bytes_count, bytes_row;
+	static uint8_t pixel[MAX_VALUE_SIZE];
+
+	/* Set coordinates */
+	lcd_x = x;
+	lcd_y = y;
+
+	/* If at the end of a line of display, go to new line and set x to 0 position */
+	if ((lcd_x + icon_font->width) > lcd_orientation.width)	{
+		lcd_y += icon_font->height;
+		lcd_x = 0;
+	}
+
+	SetCursorPosition(lcd_x, lcd_y, lcd_x + icon_font->width - 1, lcd_y + icon_font->height - 1);
+
+	/* Number of bytes to write. We have to write 2 bytes/pixel */
+	bytes_count = icon_font->height * icon_font->width * 2;
+
+	/* Start writing LCD memory */
+	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
+	WriteLCD(&lcd_write);
+
+	/* Draw font data */
+	/* go through character rows */
+	k = 0;
+	for (i = 0; i < icon_font->height; i++)	{
+		/*  */
+		char_row = icon * icon_font->offset + i * ((icon_font->width + 7) / 8);
+		/* go through character columns */
+		bytes_row = -1;
+		for (j = 0; j < icon_font->width; j++){
+			if(j % 8 == 0){
+				bytes_row++;
+			}
+			/* If exceed buffer size, send buffer */
+			if ((2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE + 1) > MAX_VALUE_SIZE){
+				lcd_cmd_t lcd_pixels = {NULL, MAX_VALUE_SIZE, pixel};
+				WriteLCD(&lcd_pixels);
+				bytes_count -= MAX_VALUE_SIZE;
+				k++;
+			}
+			/* The n=FontWidth first bits of the 16bits row data draws the corresponding part of a character */
+			if (icon_font->data[char_row + bytes_row] & (MSK_BIT8 >> (j % 8))){
+				/* if bit = 1, draw put foreground color */
+				pixel[2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE] = HighByte(foreground);
+				pixel[2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(foreground);
+			}
+			else{
+				pixel[2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE] = HighByte(background);
+				pixel[2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE + 1] = LowByte(background);
 			}
 		}
 	}
@@ -444,7 +482,7 @@ void ILI9341DrawInt(uint16_t x, uint16_t y, uint32_t num, uint8_t dig, Font_t* f
 	lcd_y = y;
 
 	for (i=0; i<dig; i++){
-		lcd_x = x + font->FontWidth * (dig-1-i);
+		lcd_x = x + font->info[num%10 + '0' - ' '].width * (dig-1-i) + 1;
 		ILI9341DrawChar(lcd_x, lcd_y, num%10 + '0', font, foreground, background);
 		num = num/10;
 	}
@@ -460,7 +498,7 @@ void ILI9341DrawString(uint16_t x, uint16_t y, char* str, Font_t *font, uint16_t
 	while (*str != '\0'){	/* End of string */
 		/* New line */
 		if (*str == '\n'){
-			lcd_y += font->FontHeight + 1;
+			lcd_y += font->font_height + 1;
 			/* if after \n is also \r, than go to the left of the screen */
 			if (*(str + 1) == '\r'){
 				lcd_x = 0;
@@ -477,20 +515,20 @@ void ILI9341DrawString(uint16_t x, uint16_t y, char* str, Font_t *font, uint16_t
 
 		/* Put character to LCD */
 		ILI9341DrawChar(lcd_x, lcd_y, *str, font, foreground, background);
+		lcd_x += font->info[*str - ' '].width + 1;
 		/* Next character */
 		str++;
-		lcd_x += font->FontWidth;
 	}
 }
 
 void ILI9341GetStringSize(char* str, Font_t* font, uint16_t* width, uint16_t* height){
 	static uint16_t w;
 
-	*height = font->FontHeight;
+	*height = font->font_height;
 	w = 0;
 	while (*str != '\0'){	/* End of string */
 	
-		w += font->FontWidth;
+		w += font->info[*str - ' '].width + 1;
 		str++;
 	}
 	*width = w;
@@ -537,28 +575,23 @@ void ILI9341DrawLine(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_
 	}
 	/* Diagonal line */
 	else{
-		if(x_dist > y_dist){
-			error = x_dist / 2;
-		}
-		else{
-			error = y_dist / 2;
-		}
+		error = x_dist - y_dist;
 
 		while (1){
 			/* Draw start point */
 			ILI9341DrawPixel(x0, y0, color);
 			/* Loop ends when start point reaches end point */
-			if (x0 == x1 || y0 == y1){
+			if (x0 == x1 && y0 == y1){
 				break;
 			}
-			error_2 = error;
+			error_2 = 2 * error;
 			/* Determine if line must grow in x direction */
-			if (error_2 > -x_dist){
+			if (error_2 > -y_dist){
 				error -= y_dist;
 				x0 += x_grow;	/* Move start point */
 			}
 			/* Determine if line must grow in y direction */
-			if (error_2 < y_dist){
+			if (error_2 < x_dist){
 				error += x_dist;
 				y0 += y_grow;	/* Move start point */
 			}
@@ -796,3 +829,9 @@ void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t height,
 	lcd_cmd_t lcd_pixel = {NULL, bytes_count, pixel};
 	WriteLCD(&lcd_pixel);
 }
+
+uint8_t ILI9341DeInit(void){
+	return 0;
+}
+
+/*==================[end of file]============================================*/
