@@ -1,6 +1,6 @@
 # Ejemplo blinking tasks
 
-Este ejemplo hace parpadear el LED 1 (verde 🟢) y el LED 2 (amarillo 🟡) de la placa ESP-EDU, cada uno a una frecuencias fija diferente, utilizando interrupciones del timer para la temporización. 
+Este ejemplo hace parpadear el LED 1 (verde 🟢) y el LED 2 (amarillo 🟡) de la placa ESP-EDU, cada uno a una frecuencias fija diferente, utilizando interrupciones del timer para la temporización.
 
 ## Cómo usar el ejemplo
 

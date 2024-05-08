@@ -1,5 +1,6 @@
 
 ![Scheme|30%](fiuner.png)
+
 # Cátedra: Electrónica Programable
 
 En este Repositorio se almacena el Firmware que se utilizará de base durante el cursado de la asignatura Electrónica Programable,
@@ -11,8 +12,8 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 1. [Instalación](./documentación/instalación.md)
 2. [Compilación](./documentación/compilación.md)
 3. [Grabación y Depuración](./documentación/depuración.md)
-3. [Proyecto nuevo](./documentación/proyecto_nuevo.md)
-4. [Detalles del Hardware](./documentación/hardware.md) 
+4. [Proyecto nuevo](./documentación/proyecto_nuevo.md)
+5. [Detalles del Hardware](./documentación/hardware.md) 
 
 ## Enlaces de Interés
 
@@ -22,9 +23,9 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 
 ## Autores
 
-* Juan Manuel Reta (juan.reta@uner.edu.ar)
-* Eduardo Filomena (eduardo.filomena@uner.edu.ar)
-* Juan Ignacio Cerrudo (juan.cerrudo@uner.edu.ar)
-* Albano Peñalva (albano.penalva@uner.edu.ar)
-* Lucía Eletti (lucia.eletti@uner.edu.ar )
-* Diego Arévalo (diego.arevalo@uner.edu.ar)
+* Juan Manuel Reta (<juan.reta@uner.edu.ar>)
+* Eduardo Filomena (<eduardo.filomena@uner.edu.ar>)
+* Juan Ignacio Cerrudo (<juan.cerrudo@uner.edu.ar>)
+* Albano Peñalva (<albano.penalva@uner.edu.ar>)
+* Lucía Eletti (<lucia.eletti@uner.edu.ar>)
+* Diego Arévalo (<diego.arevalo@uner.edu.ar>)

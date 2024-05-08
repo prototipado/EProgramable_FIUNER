@@ -1,6 +1,6 @@
 # Ejemplo blinking tasks
 
-Este ejemplo hace parpadear el LED 1 (verde 🟢), el LED 2 (amarillo 🟡) y el LED 3 (rojo 🔴) de la placa ESP-EDU, cada uno a un frecuencias fija diferente. 
+Este ejemplo hace parpadear el LED 1 (verde 🟢), el LED 2 (amarillo 🟡) y el LED 3 (rojo 🔴) de la placa ESP-EDU, cada uno a un frecuencias fija diferente.
 
 ## Cómo usar el ejemplo
 
