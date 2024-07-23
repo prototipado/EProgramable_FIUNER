@@ -62,6 +62,16 @@ void TimerInit(timer_config_t *timer_ini);
 void TimerStart(timer_mcu_t timer);
 
 /**
+ * @brief Read the current value of the selected timer.
+ * 
+ * The returned value is counted from the last call to TimerInit(), TimerStart() or the last timer interrupt.
+ * 
+ * @param timer Timer number
+ * @return The current value of the timer in us
+ */
+uint32_t TimerRead(timer_mcu_t timer);
+
+/**
  * @brief Pause timer
  * 
  * @param timer Timer number
@@ -74,6 +84,19 @@ void TimerStop(timer_mcu_t timer);
  * @param timer Timer number
  */
 void TimerReset(timer_mcu_t timer);
+
+/**
+ * @brief Update timer period
+ * 
+ * @param period New timer period in us
+ *
+ * The function will update the timer period for the timer that was previously 
+ * configured using TimerInit().
+ * 
+ * @param timer Timer number
+ * @param period Period (in us)
+ */
+void TimerUpdatePeriod(timer_mcu_t timer, uint32_t period);
 
 /** @} doxygen end group definition */
 /** @} doxygen end group definition */
