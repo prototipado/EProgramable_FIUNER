@@ -74,7 +74,7 @@ Si el directorio mostrado no existe, corrijalo por el valor correcto.
 > [!NOTE]
 > No se preocupe si el programa le muestra un error en el macro `portTICK_PERIOD_MS`, el mismo desaparecerá luego de la primera compilación.
 
-5. Para compilar el proyecto, presione el botón ![db](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/database.svg) (`ESP-IDF: Build project`). Aparecerá una notificación de que el proyecto está siendo compilado.
+5. Para compilar el proyecto, presione el botón ![db](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/symbol-property.svg) (`ESP-IDF: Build project`). Aparecerá una notificación de que el proyecto está siendo compilado.
 
     ![workspace6](./imágenes/workspace6.png)
 
