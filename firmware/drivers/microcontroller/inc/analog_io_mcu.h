@@ -75,7 +75,7 @@ void AnalogOutputInit(void);
  * @brief Read single channel.
  * 
  * @param channel Channel selected
- * @param value Read variable pointer
+ * @param value Read variable pointer (in mV)
  * @return null
  */
 void AnalogInputReadSingle(adc_ch_t channel, uint16_t *value);
@@ -101,14 +101,6 @@ void AnalogStopContinuous(adc_ch_t channel);
  * @param values Read variable array
  */
 void AnalogInputReadContinuous(adc_ch_t channel, uint16_t *values);
-
-/**
- * @brief Convert raw value from ADC to mV, using a calibration curve.
- * 
- * @param value Raw value from ADC.
- * @return uint16_t Calibrated value from ADC in mV.
- */
-uint16_t AnalogRaw2mV(uint16_t value);
 
 /**
  * @brief Digital-to-Analog convert.

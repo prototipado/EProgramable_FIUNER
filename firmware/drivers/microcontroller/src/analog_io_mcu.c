@@ -18,9 +18,9 @@
 #include "esp_adc/adc_continuous.h"
 /*==================[macros and definitions]=================================*/
 #define ADC_BITWIDTH 		SOC_ADC_DIGI_MAX_BITWIDTH	// 12 bit resolution
-#define ADC_ATTENUATION		ADC_ATTEN_DB_11				// 12dB attenuation (for 0-3,3V ADC range)
+#define ADC_ATTENUATION		ADC_ATTEN_DB_12				// 12dB attenuation (for 0-3,3V ADC range)
 /*==================[internal data declaration]==============================*/
-adc_cali_handle_t adc_calibration_single, adc_calibration_cont;
+adc_cali_handle_t adc_calibration_single_0, adc_calibration_single_1, adc_calibration_single_2, adc_calibration_single_3;
 adc_oneshot_unit_handle_t adc1_single; 
 adc_continuous_handle_t adc2_cont;
 sdm_channel_handle_t dac = NULL;
@@ -47,13 +47,6 @@ void AnalogInputInit(analog_input_config_t *config){
 	// config adc channels
 	switch(config->mode){
 		case ADC_SINGLE:
-			// create calibration curve
-			adc_cali_curve_fitting_config_t cali_config_1 = {
-				.unit_id = ADC_UNIT_1,
-				.atten = ADC_ATTENUATION,
-				.bitwidth = ADC_BITWIDTH,
-			};
-			adc_cali_create_scheme_curve_fitting(&cali_config_1, &adc_calibration_single);
         	if(!adc1_single_used){
 				adc_oneshot_new_unit(&init_config_single, &adc1_single);
 				adc1_single_used = true;
@@ -61,15 +54,47 @@ void AnalogInputInit(analog_input_config_t *config){
 			switch(config->input){
 				case CH0:
     				adc_oneshot_config_channel(adc1_single, ADC_CHANNEL_0, &adc_config_single);
+					// create calibration curve
+					adc_cali_curve_fitting_config_t cali_config_0 = {
+						.unit_id = ADC_UNIT_1,
+						.chan = ADC_CHANNEL_0, 
+						.atten = ADC_ATTENUATION,
+						.bitwidth = ADC_BITWIDTH,
+					};
+					ESP_ERROR_CHECK(adc_cali_create_scheme_curve_fitting(&cali_config_0, &adc_calibration_single_0));
 				break;
 				case CH1:
     				adc_oneshot_config_channel(adc1_single, ADC_CHANNEL_1, &adc_config_single);
+					// create calibration curve
+					adc_cali_curve_fitting_config_t cali_config_1 = {
+						.unit_id = ADC_UNIT_1,
+						.chan = ADC_CHANNEL_1, 
+						.atten = ADC_ATTENUATION,
+						.bitwidth = ADC_BITWIDTH,
+					};
+					ESP_ERROR_CHECK(adc_cali_create_scheme_curve_fitting(&cali_config_1, &adc_calibration_single_1));
 				break;
 				case CH2:
     				adc_oneshot_config_channel(adc1_single, ADC_CHANNEL_2, &adc_config_single);
+					// create calibration curve
+					adc_cali_curve_fitting_config_t cali_config_2 = {
+						.unit_id = ADC_UNIT_1,
+						.chan = ADC_CHANNEL_2, 
+						.atten = ADC_ATTENUATION,
+						.bitwidth = ADC_BITWIDTH,
+					};
+					ESP_ERROR_CHECK(adc_cali_create_scheme_curve_fitting(&cali_config_2, &adc_calibration_single_2));
 				break;
 				case CH3:
     				adc_oneshot_config_channel(adc1_single, ADC_CHANNEL_3, &adc_config_single);
+					// create calibration curve
+					adc_cali_curve_fitting_config_t cali_config_3 = {
+						.unit_id = ADC_UNIT_1,
+						.chan = ADC_CHANNEL_3, 
+						.atten = ADC_ATTENUATION,
+						.bitwidth = ADC_BITWIDTH,
+					};
+					ESP_ERROR_CHECK(adc_cali_create_scheme_curve_fitting(&cali_config_3, &adc_calibration_single_3));
 				break;
 			}
 		break;
@@ -103,7 +128,7 @@ void AnalogOutputInit(void){
 }
 
 void AnalogInputReadSingle(adc_ch_t channel, uint16_t *value){
-	switch(channel){
+    switch(channel){
 		case CH0:
 			adc_oneshot_read(adc1_single, ADC_CHANNEL_0, (int*)value);
 		break;
@@ -129,12 +154,6 @@ void AnalogStopContinuous(adc_ch_t channel){
 
 void AnalogInputReadContinuous(adc_ch_t channel, uint16_t *values){
 
-}
-
-uint16_t AnalogRaw2mV(uint16_t value){
-	uint16_t volt;
-	adc_cali_raw_to_voltage(adc_calibration_single, value, (int*)&volt);
-	return volt;
 }
 
 void AnalogOutputWrite(uint8_t value){
