@@ -1,36 +1,13 @@
 # Compilación
 
-A continuación se detallan los pasos para la descarga del repositorio de la cátedra y la compilación del primer proyecto de ejemplo.
-
-1. [Descarga de Repositorio](#descarga-de-repositorio)
-2. [Configuración del Espacio de Trabajo](#configuración-del-espacio-de-trabajo)
-3. [Compilación](#compilación)
-
-## Descarga de Repositorio
-
-1. Cree una carpeta `Repositorios` en su disco `C:/`.
-
-2. Ejecute la aplicación *Git Bash* y navegue hasta la carpeta creada.
-
-> [!TIP]
-> También puede pararse sobre la carpeta en el explorador de archivos, hacer click derecho sobre la misma y elegir la opción `Open Git Bash here`.
-
-3. Ejecute el siguiente comando:
-
-    ```PowerShell
-    git clone https://github.com/prototipado/EProgramable_FIUNER.git
-    ```
-
-4. A continuación se descargará el Repositorio en la carpeta correspondiente.
-
-    ![clone](./imágenes/clone.png)
+A continuación se detallan los pasos para la compilación del primer proyecto de ejemplo.
 
 ## Configuración del Espacio de Trabajo
 
 1. En **Visual Studio Code** seleccionar el menú File -> Open Workspace from File...
     ![workspace1](./imágenes/workspace1.png)
 
-2. Seleccione el archivo `EProgramable_C6` ubicado en `C:/Repositorios/EProgramable_FIUNER/firmware/`.
+2. Seleccione el archivo `EProgramable_C6` ubicado en la carpeta `firmware` de su repositorio, por ejemplo: `C:/Repositorios/Penalva_2C_2024/firmware/`.
     ![workspace2](./imágenes/workspace2.png)
 
 3. Se le mostrará una ventana preguntando si confía en los autores de estos archivos. Seleccione la opción `Yes, I trust the authors`.
