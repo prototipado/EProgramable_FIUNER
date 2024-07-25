@@ -101,4 +101,4 @@ La extensión de Microsoft para C y C++ agrega soporte de lenguaje para C/C++ a 
 
 ---
 
-Una vez finalizada la instalación de las herramientas puede continuar con el instructivo de [Compilación](./compilación.md).
+Una vez finalizada la instalación de las herramientas puede continuar con el instructivo de [Creación de Repositorio](./repositorio.md)

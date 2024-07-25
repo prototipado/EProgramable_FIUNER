@@ -10,16 +10,16 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 ## Primeros pasos
 
 1. [Instalación](./documentación/instalación.md)
-2. [Compilación](./documentación/compilación.md)
-3. [Grabación y Depuración](./documentación/depuración.md)
-4. [Proyecto nuevo](./documentación/proyecto_nuevo.md)
-5. [Detalles del Hardware](./documentación/hardware.md) 
+2. [Creación de Repositorio](./documentación/repositorio.md)
+3. [Compilación](./documentación/compilación.md)
+4. [Grabación y Depuración](./documentación/depuración.md)
+5. [Proyecto nuevo](./documentación/proyecto_nuevo.md)
+6. [Detalles del Hardware](./documentación/hardware.md)
 
 ## Enlaces de Interés
 
 * [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=455)
 * [IDF API para ESP32-C6](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-reference/index.html)
-
 
 ## Autores
 
