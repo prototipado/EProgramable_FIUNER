@@ -58,7 +58,7 @@ Si el directorio mostrado no existe, corrijalo por el valor correcto.
 > [!NOTE]
 > La primera compilación de un proyecto puede tomar varios minutos.
 
-6. Una vez finalizada la compilación, el programa le mostrará en el terminal el porcentaje de memoria del microcontrolador que ocupará el proyecto.
+6. Una vez finalizada la compilación, el programa le mostrará (en la pestaña `TERMINAL`) el porcentaje de memoria del microcontrolador que ocupará el proyecto.
 Además se puede observar en la barra del Explorador que se ha creado una nueva carpeta `0_blinking/build/`, donde se almacenan todos los archivos resultado de la compilación.
 
     ![workspace7](./imágenes/workspace7.png)
