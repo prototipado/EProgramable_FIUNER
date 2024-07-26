@@ -44,3 +44,7 @@ y renómbrela según el proyecto a realizar (en este ejemplo se reemplazará `x_
 
 > [!NOTE]
 > Cada proyecto tiene dos archivos `CMakeLists.txt` distintos: uno en la raiz del proyecto (`./guia1_ej2/CMakeLists.txt`) donde se modifica el nombre del proyecto, y otro dentro de la sub-carpeta `main` (`./guia1_ej2/main/CMakeLists.txt`) donde se modifica el nombre del archivo fuente (`.c`).
+
+---
+
+Una vez resuelto el ejercicio 2 puede segir la guía [Actualización de Repositorio](./repositorio2.md) par subir los cambios realizados.
