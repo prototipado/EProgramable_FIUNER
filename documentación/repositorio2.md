@@ -7,22 +7,29 @@ A continuación se detallan los pasos para actualizar los cambios realizados tan
 
 ## Cambios en Repositorio Local
 
-1. En la aplicación Visual Studio Code, diríjase a la vista de Control de Versiones (`Source Control`): ![source-control](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/source-control.svg)
+1. Antes de hacer el primer *commit* es necesario configurar su usuario (el nombre que irá asociado a cada *commit*). Ejecute la aplicación previamente instalada *Git Bash* e ingrese los siguientes comandos (modificando su nombre y dirección de coreo):
+
+```bash
+git config --global user.name "Albano Peñalva"
+git config --global user.email albano.penalva@uner.edu.ar
+```
+
+2. En la aplicación Visual Studio Code, diríjase a la vista de Control de Versiones (`Source Control`): ![source-control](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/source-control.svg)
 
     ![repo7](./imágenes/repo7.png)
 
-2. En esta nueva vista podrá ver las modificaciones realizadas en el repositorio, tanto archivos midficados (`M`) como archivos nuevos (`U`).
+3. En esta nueva vista podrá ver las modificaciones realizadas en el repositorio, tanto archivos midficados (`M`) como archivos nuevos (`U`).
 
     ![repo8](./imágenes/repo8.png)
 
 > [!NOTE]
 > Si solo se muestra un mensaje indicando que la carpeta no contiene un reositorio git, haga click en `Initialize Repository`.
 
-3. Para elegir los archivos que se incluiran en el siguiente *commit*, haga click en el ícono `+` que aparece a la derecha de cada archivo.
+4. Para elegir los archivos que se incluiran en el siguiente *commit*, haga click en el ícono `+` que aparece a la derecha de cada archivo.
 
     ![repo9](./imágenes/repo9.png)
 
-4. Los archivos que se incluiran en el siguiente *commit*, se verán en la vista de `Staged Changes`. En este caso se agregan todos los archivos correspondientes al ejercicio 2 de la guía 1.
+5. Los archivos que se incluiran en el siguiente *commit*, se verán en la vista de `Staged Changes`. En este caso se agregan todos los archivos correspondientes al ejercicio 2 de la guía 1.
 
     ![repo10](./imágenes/repo10.png)
 
@@ -32,7 +39,7 @@ A continuación se detallan los pasos para actualizar los cambios realizados tan
 > [!IMPORTANT]
 > Realice siempre *commits* separados para actualizar cambios que correspondan a poyectos distintos. Del mismo modo, si se modifican o agregan drivers, actualizarlos en *commits* separados de los proyectos.
 
-5. Agregue el mensaje que acompañará el *commit*, en este caso "Se sube resolución de ejercicio 2 de la guía 1". Haga click en el botón `Commit` para realizar el *commit* correspondiente. De esta manera los cambios quedaran guardados en su repositorio local.
+6. Agregue el mensaje que acompañará el *commit*, en este caso "Se sube resolución de ejercicio 2 de la guía 1". Haga click en el botón `Commit` para realizar el *commit* correspondiente. De esta manera los cambios quedaran guardados en su repositorio local.
 
     ![repo11](./imágenes/repo11.png)
 
@@ -41,7 +48,7 @@ A continuación se detallan los pasos para actualizar los cambios realizados tan
 
 ## Cambios en Repositorio Remoto
 
-1. Luego de realizar uno o varios *commits*, es necesario realizar un *push* para sincronizar los cambios en el repositorio remoto. Haga click en el botón `Sync Changes` para realizar el *push* correspondiente.
+1. Luego de realizar uno o varios *commits*, es necesario realizar un *push* para sincronizar los cambios en el repositorio remoto. Haga click en el botón `Sync Changes` (o en el ícono ![sync](https://raw.githubusercontent.com/microsoft/vscode-icons/2ca0f3225c1ecd16537107f60f109317fcfc3eb0/icons/dark/sync.svg) de la barra de estado) para realizar el *push* correspondiente.
 
     ![repo12](./imágenes/repo12.png)
 
