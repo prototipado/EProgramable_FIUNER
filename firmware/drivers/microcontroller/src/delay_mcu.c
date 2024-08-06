@@ -14,6 +14,7 @@
 #include "driver/gptimer.h"
 #include "freertos/FreeRTOS.h"
 #include "freertos/task.h"
+#include "freertos/semphr.h"
 #include "esp_rom_sys.h"
 /*==================[macros and definitions]=================================*/
 #define US_RESOLUTION_HZ	1000000	/*!< 1usec */
