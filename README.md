@@ -21,6 +21,7 @@ El mismo está pensado para ser utilizado con la placa ESP-EDU, una placa diseñ
 
 * [Campus Virtual de la Cátedra](http://campus.ingenieria.uner.edu.ar/course/view.php?id=455)
 * [IDF API para ESP32-C6](https://docs.espressif.com/projects/esp-idf/en/stable/esp32c6/api-reference/index.html)
+* [Repositorio de Hardware (ESP-EDU)](https://github.com/prototipado/ESP-EDU)
 
 ## Autores
 

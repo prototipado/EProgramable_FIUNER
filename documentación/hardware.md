@@ -2,6 +2,7 @@
 
 ESP-EDU es una placa diseñada por la catedra de Electrónica Programable para ser utilizada durante el cursado de la materia,
 y está basada en el módulo [ESP32-C6-DevKitC-1](https://docs.espressif.com/projects/espressif-esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/index.html).
+Los archivos de diseño de la misma se pueden encontrar en el siguiente [Repositorio](https://github.com/prototipado/ESP-EDU).
 
 ![git](./imágenes/esp-edu_pinout.png)
 
@@ -32,6 +33,7 @@ y está basada en el módulo [ESP32-C6-DevKitC-1](https://docs.espressif.com/pro
 
 ## Enlaces de Interés
 
+* [Repositorio ESP-EDU](https://github.com/prototipado/ESP-EDU)
 * [Manual de Usuario ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_technical_reference_manual_en.pdf)
 * [Hoja de Datos de ESP32-C6](https://www.espressif.com/sites/default/files/documentation/esp32-c6_datasheet_en.pdf)
 * [Guía de Usuario de ESP32-C6-DevKitC-1](https://docs.espressif.com/projects/espressif-esp-dev-kits/en/latest/esp32c6/esp32-c6-devkitc-1/user_guide.html)
