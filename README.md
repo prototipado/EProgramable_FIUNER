@@ -1,5 +1,10 @@
-
-![Scheme|30%](fiuner.png)
+<p align="center">
+<img src="fiuner.png">
+<br>
+<img alt="GitHub forks" src="https://img.shields.io/github/forks/prototipado/EProgramable_FIUNER?style=flat">
+<img alt="GitHub commit activity" src="https://img.shields.io/github/commit-activity/t/prototipado/EProgramable_FIUNER">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/prototipado/EProgramable_FIUNER?style=flat">
+</p>
 
 # Cátedra: Electrónica Programable
 
