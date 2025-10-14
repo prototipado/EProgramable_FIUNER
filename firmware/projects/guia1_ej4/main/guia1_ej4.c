@@ -86,7 +86,6 @@ typedef struct
  */
 void mapearbits(gpioConf_t *arreglo, uint8_t digits)
 {   
-    printf("llegue hasta antes del if ");  // Debug: mensaje de seguimiento
     
     // Bucle para revisar cada uno de los 4 bits del dígito BCD
     for(int i = 0; i < 4; i++)
