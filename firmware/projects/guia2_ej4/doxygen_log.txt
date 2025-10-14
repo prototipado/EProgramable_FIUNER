@@ -1,0 +1,806 @@
+Doxygen version used: 1.14.0 (cbe58f6237b2238c9af7f51c6b7afb8bbf52c866)
+Searching for include files...
+Searching for example files...
+Searching for images...
+Searching for dot files...
+Searching for msc files...
+Searching for dia files...
+Searching for plantuml files...
+Searching for files to exclude
+Searching INPUT for files to process...
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdASM
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdC
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdC/tmp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX/tmp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/bootloader.elf.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/CMakeScratch
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/git-data
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/pkgRedirects
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/config
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esptool_py
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esptool_py/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_app_format
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_app_format/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_bootloader_format
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_common
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_common/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/lowpower
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/lowpower/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_hw_support/port/esp32c6/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_rom
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_rom/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_security
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_security/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_system
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_system/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_tee
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/esp_tee/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/freertos
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/freertos/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/hal
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/hal/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/hal/CMakeFiles/__idf_hal.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/log/CMakeFiles/__idf_log.dir/src/noos
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/main
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/main/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/main/CMakeFiles/__idf_main.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/micro-ecc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/micro-ecc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/micro-ecc/CMakeFiles/__idf_micro-ecc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/newlib
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/newlib/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/partition_table
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/partition_table/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/riscv/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/riscv/CMakeFiles/__idf_riscv.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/soc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/soc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/soc/CMakeFiles/__idf_soc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/spi_flash
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/spi_flash/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/gdbinit
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader-prefix
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader-prefix/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader-prefix/src/bootloader-stamp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader-prefix/tmp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdASM
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdC
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdC/tmp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdCXX
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdCXX/tmp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/bootloader.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/CMakeScratch
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/git-data
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/pkgRedirects
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/x_template.elf.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/config
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_trace
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_trace/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_trace/CMakeFiles/__idf_app_trace.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_update
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_update/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/app_update/CMakeFiles/__idf_app_update.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/bootloader_flash/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bootloader_support/CMakeFiles/__idf_bootloader_support.dir/src/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/bt/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cmock
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cmock/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cmock/CMakeFiles/__idf_cmock.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cmock/CMakeFiles/__idf_cmock.dir/CMock/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/console
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/console/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/console/CMakeFiles/__idf_console.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/console/CMakeFiles/__idf_console.dir/argtable3
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/console/CMakeFiles/__idf_console.dir/linenoise
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cxx
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cxx/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/cxx/CMakeFiles/__idf_cxx.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver/CMakeFiles/__idf_driver.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/deprecated
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/i2c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/driver/CMakeFiles/__idf_driver.dir/twai
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles/__idf_drivers.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles/__idf_drivers.dir/devices
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles/__idf_drivers.dir/devices/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles/__idf_drivers.dir/microcontroller
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/drivers/CMakeFiles/__idf_drivers.dir/microcontroller/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/efuse/CMakeFiles/__idf_efuse.dir/src/efuse_controller/keys/with_key_purposes
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp-tls
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp-tls/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp-tls/CMakeFiles/__idf_esp-tls.dir/esp-tls-crypto
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/espcoredump/CMakeFiles/__idf_espcoredump.dir/src/port/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esptool_py
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esptool_py/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/deprecated
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_adc/CMakeFiles/__idf_esp_adc.dir/gdma
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_app_format
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_app_format/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_app_format/CMakeFiles/__idf_esp_app_format.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_bootloader_format
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_bootloader_format/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_bootloader_format/CMakeFiles/__idf_esp_bootloader_format.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_coex
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_coex/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_coex/CMakeFiles/__idf_esp_coex.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_common
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_common/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_common/CMakeFiles/__idf_esp_common.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ana_cmpr
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ana_cmpr/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_bitscrambler
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_bitscrambler/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_cam
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_cam/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_cam/CMakeFiles/__idf_esp_driver_cam.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_dac
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_dac/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gpio
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gpio/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gpio/CMakeFiles/__idf_esp_driver_gpio.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gptimer
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gptimer/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_gptimer/CMakeFiles/__idf_esp_driver_gptimer.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2c/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2c/CMakeFiles/__idf_esp_driver_i2c.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2s
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2s/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_i2s/CMakeFiles/__idf_esp_driver_i2s.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_isp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_isp/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_jpeg
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_jpeg/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ledc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ledc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ledc/CMakeFiles/__idf_esp_driver_ledc.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_mcpwm
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_mcpwm/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_mcpwm/CMakeFiles/__idf_esp_driver_mcpwm.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_parlio
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_parlio/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_parlio/CMakeFiles/__idf_esp_driver_parlio.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_parlio/CMakeFiles/__idf_esp_driver_parlio.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_pcnt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_pcnt/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_pcnt/CMakeFiles/__idf_esp_driver_pcnt.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ppa
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_ppa/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_rmt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_rmt/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_rmt/CMakeFiles/__idf_esp_driver_rmt.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdio
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdio/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdio/CMakeFiles/__idf_esp_driver_sdio.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdm
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdm/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdm/CMakeFiles/__idf_esp_driver_sdm.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdmmc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdmmc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdspi
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdspi/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_sdspi/CMakeFiles/__idf_esp_driver_sdspi.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_spi
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_spi/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_spi/CMakeFiles/__idf_esp_driver_spi.dir/src/gpspi
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_touch_sens
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_touch_sens/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_tsens
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_tsens/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_tsens/CMakeFiles/__idf_esp_driver_tsens.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_twai
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_twai/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_twai/CMakeFiles/__idf_esp_driver_twai.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_uart
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_uart/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_uart/CMakeFiles/__idf_esp_driver_uart.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_usb_serial_jtag
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_usb_serial_jtag/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_driver_usb_serial_jtag/CMakeFiles/__idf_esp_driver_usb_serial_jtag.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_eth
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_eth/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_eth/CMakeFiles/__idf_esp_eth.dir/src/phy
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_event
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_event/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_event/CMakeFiles/__idf_esp_event.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_gdbstub/CMakeFiles/__idf_esp_gdbstub.dir/src/port/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hid
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hid/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hid/CMakeFiles/__idf_esp_hid.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_ota
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_ota/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_ota/CMakeFiles/__idf_esp_https_ota.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_server
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_server/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_https_server/CMakeFiles/__idf_esp_https_server.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_client
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_client/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_client/CMakeFiles/__idf_esp_http_client.dir/lib
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_server
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_server/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_http_server/CMakeFiles/__idf_esp_http_server.dir/src/util
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/deprecated
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/dma
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/lowpower/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/mspi_timing_tuning
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/CMakeFiles/__idf_esp_hw_support.dir/power_supply
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/lowpower
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/lowpower/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_hw_support/port/esp32c6/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/i2c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/spi
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_lcd/CMakeFiles/__idf_esp_lcd.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_local_ctrl
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_local_ctrl/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/proto-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_local_ctrl/CMakeFiles/__idf_esp_local_ctrl.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_mm
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_mm/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_mm/CMakeFiles/__idf_esp_mm.dir/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif/CMakeFiles/__idf_esp_netif.dir/lwip/netif
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif_stack
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_netif_stack/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_partition
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_partition/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_partition/CMakeFiles/__idf_esp_partition.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_phy
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_phy/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_phy/CMakeFiles/__idf_esp_phy.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_pm
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_pm/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_pm/CMakeFiles/__idf_esp_pm.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_psram
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_psram/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_ringbuf
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_ringbuf/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_ringbuf/CMakeFiles/__idf_esp_ringbuf.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_rom
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_rom/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_rom/CMakeFiles/__idf_esp_rom.dir/patches
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_security
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_security/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_security/CMakeFiles/__idf_esp_security.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/arch/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/port/soc/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/CMakeFiles/__idf_esp_system.dir/task_wdt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/ld
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/port/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/port/soc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/port/soc/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_system/port/soc/esp32c6/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_tee
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_tee/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_timer
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_timer/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_timer/CMakeFiles/__idf_esp_timer.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_vfs_console
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_vfs_console/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_vfs_console/CMakeFiles/__idf_esp_vfs_console.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/regulatory
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/esp_wifi/CMakeFiles/__idf_esp_wifi.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/diskio
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/port/freertos
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/fatfs/CMakeFiles/__idf_fatfs.dir/vfs
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir/esp_additions
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/freertos/CMakeFiles/__idf_freertos.dir/FreeRTOS-Kernel/portable/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/hal
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/hal/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/hal/CMakeFiles/__idf_hal.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/hal/CMakeFiles/__idf_hal.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/heap
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/heap/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/heap/CMakeFiles/__idf_heap.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/heap/CMakeFiles/__idf_heap.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/heap/CMakeFiles/__idf_heap.dir/port/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/http_parser
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/http_parser/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/http_parser/CMakeFiles/__idf_http_parser.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/idf_test
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/idf_test/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ieee802154
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ieee802154/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ieee802154/CMakeFiles/__idf_ieee802154.dir/driver
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/json
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/json/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/json/CMakeFiles/__idf_json.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/json/CMakeFiles/__idf_json.dir/cJSON
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/buffer
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/cache
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/log_level/tag_log_level/linked_list
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/log/CMakeFiles/__idf_log.dir/src/os
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/dhcpserver
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/ping
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/apps/sntp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/api
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/netbiosns
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/apps/sntp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv4
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/core/ipv6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/lwip/src/netif/ppp/polarssl
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/debug
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/esp32xx
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/freertos
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/lwip/CMakeFiles/__idf_lwip.dir/port/hooks
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/main
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/main/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/main/CMakeFiles/__idf_main.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/esp_crt_bundle
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/CMakeFiles/__idf_mbedtls.dir/__/__
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/everest
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/everest/CMakeFiles/everest.dir/library
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/3rdparty/p256-m/CMakeFiles/p256m.dir/p256-m
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/include
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/include/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/aes
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/aes/dma
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/bignum
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/crypto_shared_gdma
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/ecc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/esp_ds
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/md
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/sha
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedcrypto.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port/sha/core
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp/v5.5
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp/v5.5/esp-idf
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp/v5.5/esp-idf/components
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedtls.dir/C_/Users/angel/esp/v5.5/esp-idf/components/mbedtls/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/CMakeFiles/mbedx509.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/pkgconfig
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/pkgconfig/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mqtt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mqtt/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mqtt/CMakeFiles/__idf_mqtt.dir/esp-mqtt/lib
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/CMakeFiles/__idf_newlib.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/CMakeFiles/__idf_newlib.dir/src/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/src/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/newlib/src/port/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_flash
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_flash/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_flash/CMakeFiles/__idf_nvs_flash.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_sec_provider
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_sec_provider/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/nvs_sec_provider/CMakeFiles/__idf_nvs_sec_provider.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/openthread
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/openthread/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/partition_table
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/partition_table/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protobuf-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protobuf-c/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protobuf-c/CMakeFiles/__idf_protobuf-c.dir/protobuf-c/protobuf-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/proto-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/common
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/crypto/srp6a
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/security
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/protocomm/CMakeFiles/__idf_protocomm.dir/src/transports
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/pthread
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/pthread/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/pthread/CMakeFiles/__idf_pthread.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/riscv
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/riscv/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/riscv/CMakeFiles/__idf_riscv.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/rt
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/rt/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/rt/CMakeFiles/__idf_rt.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/sdmmc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/sdmmc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/sdmmc/CMakeFiles/__idf_sdmmc.dir/sd_pwr_ctrl
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/soc
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/soc/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/soc/CMakeFiles/__idf_soc.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/soc/CMakeFiles/__idf_soc.dir/esp32c6
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spiffs
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spiffs/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spiffs/CMakeFiles/__idf_spiffs.dir/spiffs/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spi_flash
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spi_flash/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/spi_flash/CMakeFiles/__idf_spi_flash.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/tcp_transport
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/tcp_transport/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/tcp_transport/CMakeFiles/__idf_tcp_transport.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ulp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/ulp/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles/__idf_unity.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/port/esp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/unity/CMakeFiles/__idf_unity.dir/unity/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/usb
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/usb/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/vfs
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/vfs/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/vfs/CMakeFiles/__idf_vfs.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wear_levelling
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wear_levelling/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wear_levelling/CMakeFiles/__idf_wear_levelling.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wifi_provisioning
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wifi_provisioning/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/proto-c
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wifi_provisioning/CMakeFiles/__idf_wifi_provisioning.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/esp_supplicant/src/crypto
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/port
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/ap
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/common
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/crypto
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_common
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/eap_peer
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/rsn_supp
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/utils
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/wpa_supplicant/CMakeFiles/__idf_wpa_supplicant.dir/src/wps
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/gdbinit
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/partition_table
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/documentacion
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/documentacion/doxygen
+Searching for files in directory C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/main
+Reading and parsing tag files
+Parsing files
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/config/sdkconfig.h...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/config/sdkconfig.h...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/project_elf_src_esp32c6.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/bootloader/project_elf_src_esp32c6.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/config/sdkconfig.h...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/config/sdkconfig.h...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/error.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/error.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/version_features.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/esp-idf/mbedtls/mbedtls/library/version_features.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/project_elf_src_esp32c6.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/build/project_elf_src_esp32c6.c...
+Preprocessing C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/main/guia2_ej4.c...
+Parsing file C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/main/guia2_ej4.c...
+Reading C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/README.md...
+Building macro definition list...
+Building group list...
+Building directory list...
+Building namespace list...
+Building file list...
+Building class list...
+Building concept list...
+Computing nesting relations for classes...
+Associating documentation with classes...
+Associating documentation with concepts...
+Associating documentation with modules...
+Building example list...
+Searching for enumerations...
+Searching for documented typedefs...
+Searching for members imported via using declarations...
+Searching for included using directives...
+Searching for documented variables...
+Building interface member list...
+Building member list...
+Searching for friends...
+Searching for documented defines...
+Computing class inheritance relations...
+Computing class usage relations...
+Flushing cached template relations that have become invalid...
+Warn for undocumented namespaces...
+Computing class relations...
+Add enum values to enums...
+Searching for member function documentation...
+Creating members for template instances...
+Building page list...
+Search for main page...
+Computing page relations...
+Determining the scope of groups...
+Computing module relations...
+Sorting lists...
+Determining which enums are documented
+Computing member relations...
+Building full member lists recursively...
+Adding members to member groups.
+Computing member references...
+Inheriting documentation...
+Generating disk names...
+Adding source references...
+Adding xrefitems...
+Sorting member lists...
+Setting anonymous enum type...
+Computing dependencies between directories...
+Generating citations page...
+Counting members...
+Counting data structures...
+Resolving user defined references...
+Finding anchors and sections in the documentation...
+Transferring function references...
+Combining using relations...
+Adding members to index pages...
+Correcting members for VHDL...
+Computing tooltip texts...
+Generating style sheet...
+Generating search indices...
+Generating example documentation...
+Generating file sources...
+Generating code for file build/bootloader/config/sdkconfig.h...
+Generating code for file build/config/sdkconfig.h...
+Generating file documentation...
+Generating docs for file build/bootloader/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Generating docs for file build/CMakeFiles/3.30.2/CompilerIdC/CMakeCCompilerId.c...
+Generating docs for file build/bootloader/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Generating docs for file build/CMakeFiles/3.30.2/CompilerIdCXX/CMakeCXXCompilerId.cpp...
+Generating docs for file build/bootloader/config/sdkconfig.h...
+Generating docs for file build/config/sdkconfig.h...
+Generating docs for file build/bootloader/project_elf_src_esp32c6.c...
+Generating docs for file build/project_elf_src_esp32c6.c...
+Generating docs for file build/esp-idf/mbedtls/mbedtls/library/error.c...
+Generating docs for file build/esp-idf/mbedtls/mbedtls/library/psa_crypto_driver_wrappers_no_static.c...
+Generating docs for file build/esp-idf/mbedtls/mbedtls/library/ssl_debug_helpers_generated.c...
+Generating docs for file build/esp-idf/mbedtls/mbedtls/library/version_features.c...
+Generating docs for file main/guia2_ej4.c...
+Generating docs for file README.md...
+Generating page documentation...
+Generating docs for page md__r_e_a_d_m_e...
+C:/Repositorios/Perez_2C_2025/firmware/projects/guia2_ej4/README.md:3: warning: unable to resolve reference to 'C:/Repositorios/Perez_2C_2025/documentación/proyecto_nuevo.md' for \ref command
+Generating group documentation...
+Generating class documentation...
+Generating concept documentation...
+Generating module documentation...
+Generating namespace documentation...
+Generating graph info page...
+Generating directory documentation...
+Generating index page...
+Generating main page...
+Generating page index...
+Generating topic index...
+Generating module index...
+Generating module member index...
+Generating namespace index...
+Generating namespace member index...
+Generating concept index...
+Generating annotated compound index...
+Generating alphabetical compound index...
+Generating hierarchical class index...
+Generating member index...
+Generating file index...
+Generating file member index...
+Generating example index...
+finalizing index lists...
+writing tag file...
+Running plantuml with JAVA...
+type lookup cache used 1097/65536 hits=996 misses=1097
+symbol lookup cache used 1101/65536 hits=1070 misses=1101
+finished...
+
+*** Doxygen has finished

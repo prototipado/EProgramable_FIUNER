@@ -1,0 +1,243 @@
+\doxysection{main/guia2\+\_\+ej3.c File Reference}
+\hypertarget{guia2__ej3_8c}{}\label{guia2__ej3_8c}\index{main/guia2\_ej3.c@{main/guia2\_ej3.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}freertos/\+Free\+RTOS.\+h"{}}\newline
+{\ttfamily \#include "{}freertos/task.\+h"{}}\newline
+{\ttfamily \#include "{}led.\+h"{}}\newline
+{\ttfamily \#include "{}switch.\+h"{}}\newline
+{\ttfamily \#include "{}math.\+h"{}}\newline
+{\ttfamily \#include "{}gpio\+\_\+mcu.\+h"{}}\newline
+{\ttfamily \#include "{}hc\+\_\+sr04.\+h"{}}\newline
+{\ttfamily \#include "{}lcditse0803.\+h"{}}\newline
+{\ttfamily \#include "{}timer\+\_\+mcu.\+h"{}}\newline
+{\ttfamily \#include "{}uart\+\_\+mcu.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{guia2__ej3_8c_a8c0e695db9ea0899c79b9c5493827b70}{CONFIG\+\_\+\+BLINK\+\_\+\+PERIOD1}}~1000000
+\begin{DoxyCompactList}\small\item\em Periodo de la interrupción del temporizador A (en microsegundos). \end{DoxyCompactList}\item 
+\#define \mbox{\hyperlink{guia2__ej3_8c_a3df1b4cad09974bfc68858fad7cdc054}{CONFIG\+\_\+\+BLINK\+\_\+\+PERIOD}}~500000
+\begin{DoxyCompactList}\small\item\em Periodo de la interrupción del temporizador B (en microsegundos). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{guia2__ej3_8c_afaccfed84cd1498a05ea04a65f1209b1}{Func\+TimerA}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Interrupción del temporizador A\+: notifica a la tarea de medición. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a5088c3325764095ca222dc78c328f466}{Func\+TimerB}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Interrupción del temporizador B\+: notifica a la tarea de visualización. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_af3d5c13a014e4e1e9e58b843ece43e59}{medirdistancia}} (void \texorpdfstring{$\ast$}{*}pv\+Parameter)
+\begin{DoxyCompactList}\small\item\em Tarea de Free\+RTOS que mide la distancia utilizando el sensor HC-\/\+SR04. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_acac7b6f1f6c6921d702063b349ad541d}{mostrar\+Distancia}} (void \texorpdfstring{$\ast$}{*}pv\+Parameter)
+\begin{DoxyCompactList}\small\item\em Tarea de Free\+RTOS que actualiza la pantalla LCD y los LEDs. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a342773b5754df601b5cbc457e8a0e76a}{Uart\+Task}} (void \texorpdfstring{$\ast$}{*}pv\+Parameter)
+\begin{DoxyCompactList}\small\item\em Tarea que envía por UART la distancia medida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a99fb1c4e62e79c95fd7542235954f294}{Cambio\+Encendido}} ()
+\begin{DoxyCompactList}\small\item\em Cambia el estado de encendido/apagado del sistema. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a285de706a1d1fbd5d4f827260ae8f2de}{Cambio\+Hold}} ()
+\begin{DoxyCompactList}\small\item\em Cambia el estado del modo hold. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a25a77f34dc17f4cf317b396351fa5862}{cambio\+Estado}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Callback UART\+: permite cambiar el estado de encendido o hold con comandos. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_afbeb30f5a4e35e55d9e35358b572b5d0}{Leds}} ()
+\begin{DoxyCompactList}\small\item\em Controla el encendido de LEDs según la distancia medida. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej3_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}{app\+\_\+main}} (void)
+\begin{DoxyCompactList}\small\item\em Función principal\+: inicializa periféricos y crea tareas de Free\+RTOS. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+bool \mbox{\hyperlink{guia2__ej3_8c_a5332d02d82dacdfb5c6dc01cb428b013}{encendido}} = true
+\begin{DoxyCompactList}\small\item\em Variable que indica si el sistema está encendido. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{guia2__ej3_8c_af0129e079b57e897edf00f22cc25f3d4}{hold}} = false
+\begin{DoxyCompactList}\small\item\em Variable que indica si el valor de la distancia debe mantenerse fijo (modo hold). \end{DoxyCompactList}\item 
+uint32\+\_\+t \mbox{\hyperlink{guia2__ej3_8c_ac3498e35b62924f5eb79dd0e1f50e031}{distancia}} = 0
+\begin{DoxyCompactList}\small\item\em Valor de la distancia medida por el sensor HC-\/\+SR04. \end{DoxyCompactList}\item 
+Task\+Handle\+\_\+t \mbox{\hyperlink{guia2__ej3_8c_ae39b1f9d63940785c267968dce470a67}{Mido}} = NULL
+\begin{DoxyCompactList}\small\item\em Handle de la tarea encargada de medir la distancia. \end{DoxyCompactList}\item 
+Task\+Handle\+\_\+t \mbox{\hyperlink{guia2__ej3_8c_a317827d66169ff37a4679535d5c15028}{Muestro}} = NULL
+\begin{DoxyCompactList}\small\item\em Handle de la tarea encargada de mostrar la distancia. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{guia2__ej3_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{guia2__ej3_8c_a3df1b4cad09974bfc68858fad7cdc054}\index{guia2\_ej3.c@{guia2\_ej3.c}!CONFIG\_BLINK\_PERIOD@{CONFIG\_BLINK\_PERIOD}}
+\index{CONFIG\_BLINK\_PERIOD@{CONFIG\_BLINK\_PERIOD}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{CONFIG\_BLINK\_PERIOD}{CONFIG\_BLINK\_PERIOD}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a3df1b4cad09974bfc68858fad7cdc054} 
+\#define CONFIG\+\_\+\+BLINK\+\_\+\+PERIOD~500000}
+
+
+
+Periodo de la interrupción del temporizador B (en microsegundos). 
+
+\Hypertarget{guia2__ej3_8c_a8c0e695db9ea0899c79b9c5493827b70}\index{guia2\_ej3.c@{guia2\_ej3.c}!CONFIG\_BLINK\_PERIOD1@{CONFIG\_BLINK\_PERIOD1}}
+\index{CONFIG\_BLINK\_PERIOD1@{CONFIG\_BLINK\_PERIOD1}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{CONFIG\_BLINK\_PERIOD1}{CONFIG\_BLINK\_PERIOD1}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a8c0e695db9ea0899c79b9c5493827b70} 
+\#define CONFIG\+\_\+\+BLINK\+\_\+\+PERIOD1~1000000}
+
+
+
+Periodo de la interrupción del temporizador A (en microsegundos). 
+
+
+
+\label{doc-func-members}
+\Hypertarget{guia2__ej3_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{guia2__ej3_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}\index{guia2\_ej3.c@{guia2\_ej3.c}!app\_main@{app\_main}}
+\index{app\_main@{app\_main}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{app\_main()}{app\_main()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a630544a7f0a2cc40d8a7fefab7e2fe70} 
+void app\+\_\+main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal\+: inicializa periféricos y crea tareas de Free\+RTOS. 
+
+\Hypertarget{guia2__ej3_8c_a99fb1c4e62e79c95fd7542235954f294}\index{guia2\_ej3.c@{guia2\_ej3.c}!CambioEncendido@{CambioEncendido}}
+\index{CambioEncendido@{CambioEncendido}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{CambioEncendido()}{CambioEncendido()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a99fb1c4e62e79c95fd7542235954f294} 
+void Cambio\+Encendido (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Cambia el estado de encendido/apagado del sistema. 
+
+\Hypertarget{guia2__ej3_8c_a25a77f34dc17f4cf317b396351fa5862}\index{guia2\_ej3.c@{guia2\_ej3.c}!cambioEstado@{cambioEstado}}
+\index{cambioEstado@{cambioEstado}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{cambioEstado()}{cambioEstado()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a25a77f34dc17f4cf317b396351fa5862} 
+void cambio\+Estado (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Callback UART\+: permite cambiar el estado de encendido o hold con comandos. 
+
+\Hypertarget{guia2__ej3_8c_a285de706a1d1fbd5d4f827260ae8f2de}\index{guia2\_ej3.c@{guia2\_ej3.c}!CambioHold@{CambioHold}}
+\index{CambioHold@{CambioHold}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{CambioHold()}{CambioHold()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a285de706a1d1fbd5d4f827260ae8f2de} 
+void Cambio\+Hold (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Cambia el estado del modo hold. 
+
+\Hypertarget{guia2__ej3_8c_afaccfed84cd1498a05ea04a65f1209b1}\index{guia2\_ej3.c@{guia2\_ej3.c}!FuncTimerA@{FuncTimerA}}
+\index{FuncTimerA@{FuncTimerA}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{FuncTimerA()}{FuncTimerA()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_afaccfed84cd1498a05ea04a65f1209b1} 
+void Func\+TimerA (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Interrupción del temporizador A\+: notifica a la tarea de medición. 
+
+\Hypertarget{guia2__ej3_8c_a5088c3325764095ca222dc78c328f466}\index{guia2\_ej3.c@{guia2\_ej3.c}!FuncTimerB@{FuncTimerB}}
+\index{FuncTimerB@{FuncTimerB}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{FuncTimerB()}{FuncTimerB()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a5088c3325764095ca222dc78c328f466} 
+void Func\+TimerB (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Interrupción del temporizador B\+: notifica a la tarea de visualización. 
+
+\Hypertarget{guia2__ej3_8c_afbeb30f5a4e35e55d9e35358b572b5d0}\index{guia2\_ej3.c@{guia2\_ej3.c}!Leds@{Leds}}
+\index{Leds@{Leds}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{Leds()}{Leds()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_afbeb30f5a4e35e55d9e35358b572b5d0} 
+void Leds (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Controla el encendido de LEDs según la distancia medida. 
+
+\Hypertarget{guia2__ej3_8c_af3d5c13a014e4e1e9e58b843ece43e59}\index{guia2\_ej3.c@{guia2\_ej3.c}!medirdistancia@{medirdistancia}}
+\index{medirdistancia@{medirdistancia}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{medirdistancia()}{medirdistancia()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_af3d5c13a014e4e1e9e58b843ece43e59} 
+void medirdistancia (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{pv\+Parameter}{}\end{DoxyParamCaption})}
+
+
+
+Tarea de Free\+RTOS que mide la distancia utilizando el sensor HC-\/\+SR04. 
+
+\Hypertarget{guia2__ej3_8c_acac7b6f1f6c6921d702063b349ad541d}\index{guia2\_ej3.c@{guia2\_ej3.c}!mostrarDistancia@{mostrarDistancia}}
+\index{mostrarDistancia@{mostrarDistancia}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{mostrarDistancia()}{mostrarDistancia()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_acac7b6f1f6c6921d702063b349ad541d} 
+void mostrar\+Distancia (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{pv\+Parameter}{}\end{DoxyParamCaption})}
+
+
+
+Tarea de Free\+RTOS que actualiza la pantalla LCD y los LEDs. 
+
+\Hypertarget{guia2__ej3_8c_a342773b5754df601b5cbc457e8a0e76a}\index{guia2\_ej3.c@{guia2\_ej3.c}!UartTask@{UartTask}}
+\index{UartTask@{UartTask}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{UartTask()}{UartTask()}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a342773b5754df601b5cbc457e8a0e76a} 
+void Uart\+Task (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{pv\+Parameter}{}\end{DoxyParamCaption})}
+
+
+
+Tarea que envía por UART la distancia medida. 
+
+
+
+\label{doc-var-members}
+\Hypertarget{guia2__ej3_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{guia2__ej3_8c_ac3498e35b62924f5eb79dd0e1f50e031}\index{guia2\_ej3.c@{guia2\_ej3.c}!distancia@{distancia}}
+\index{distancia@{distancia}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{distancia}{distancia}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_ac3498e35b62924f5eb79dd0e1f50e031} 
+uint32\+\_\+t distancia = 0}
+
+
+
+Valor de la distancia medida por el sensor HC-\/\+SR04. 
+
+\Hypertarget{guia2__ej3_8c_a5332d02d82dacdfb5c6dc01cb428b013}\index{guia2\_ej3.c@{guia2\_ej3.c}!encendido@{encendido}}
+\index{encendido@{encendido}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{encendido}{encendido}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a5332d02d82dacdfb5c6dc01cb428b013} 
+bool encendido = true}
+
+
+
+Variable que indica si el sistema está encendido. 
+
+\Hypertarget{guia2__ej3_8c_af0129e079b57e897edf00f22cc25f3d4}\index{guia2\_ej3.c@{guia2\_ej3.c}!hold@{hold}}
+\index{hold@{hold}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{hold}{hold}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_af0129e079b57e897edf00f22cc25f3d4} 
+bool hold = false}
+
+
+
+Variable que indica si el valor de la distancia debe mantenerse fijo (modo hold). 
+
+\Hypertarget{guia2__ej3_8c_ae39b1f9d63940785c267968dce470a67}\index{guia2\_ej3.c@{guia2\_ej3.c}!Mido@{Mido}}
+\index{Mido@{Mido}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{Mido}{Mido}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_ae39b1f9d63940785c267968dce470a67} 
+Task\+Handle\+\_\+t Mido = NULL}
+
+
+
+Handle de la tarea encargada de medir la distancia. 
+
+\Hypertarget{guia2__ej3_8c_a317827d66169ff37a4679535d5c15028}\index{guia2\_ej3.c@{guia2\_ej3.c}!Muestro@{Muestro}}
+\index{Muestro@{Muestro}!guia2\_ej3.c@{guia2\_ej3.c}}
+\doxysubsubsection{\texorpdfstring{Muestro}{Muestro}}
+{\footnotesize\ttfamily \label{guia2__ej3_8c_a317827d66169ff37a4679535d5c15028} 
+Task\+Handle\+\_\+t Muestro = NULL}
+
+
+
+Handle de la tarea encargada de mostrar la distancia. 
+

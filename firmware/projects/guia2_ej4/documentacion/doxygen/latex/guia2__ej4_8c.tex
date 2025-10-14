@@ -1,0 +1,177 @@
+\doxysection{main/guia2\+\_\+ej4.c File Reference}
+\hypertarget{guia2__ej4_8c}{}\label{guia2__ej4_8c}\index{main/guia2\_ej4.c@{main/guia2\_ej4.c}}
+{\ttfamily \#include $<$stdio.\+h$>$}\newline
+{\ttfamily \#include $<$stdint.\+h$>$}\newline
+{\ttfamily \#include $<$stdbool.\+h$>$}\newline
+{\ttfamily \#include "{}freertos/\+Free\+RTOS.\+h"{}}\newline
+{\ttfamily \#include "{}freertos/task.\+h"{}}\newline
+{\ttfamily \#include "{}led.\+h"{}}\newline
+{\ttfamily \#include "{}switch.\+h"{}}\newline
+{\ttfamily \#include "{}analog\+\_\+io\+\_\+mcu.\+h"{}}\newline
+{\ttfamily \#include "{}uart\+\_\+mcu.\+h"{}}\newline
+{\ttfamily \#include "{}timer\+\_\+mcu.\+h"{}}\newline
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{guia2__ej4_8c_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}~231
+\begin{DoxyCompactList}\small\item\em Tamaño del buffer que almacena una señal ECG simulada. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{guia2__ej4_8c_afaccfed84cd1498a05ea04a65f1209b1}{Func\+TimerA}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Callback de interrupción del temporizador A. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej4_8c_a5088c3325764095ca222dc78c328f466}{Func\+TimerB}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Callback de interrupción del temporizador B. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej4_8c_af32e2cabf3d779c20cdc13706026393a}{Funcion}} (void \texorpdfstring{$\ast$}{*}param)
+\begin{DoxyCompactList}\small\item\em Tarea de adquisición y transmisión serie. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej4_8c_a3a20e1af53ab1822346d9d22b8de4062}{mostrarecg}} ()
+\begin{DoxyCompactList}\small\item\em Tarea que genera la señal ECG simulada en la salida analógica. \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{guia2__ej4_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}{app\+\_\+main}} (void)
+\begin{DoxyCompactList}\small\item\em Función principal de la aplicación (punto de entrada de Free\+RTOS). \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+Task\+Handle\+\_\+t \mbox{\hyperlink{guia2__ej4_8c_a1ebeb409da0781146e9ef82dda2528d0}{cambio}} = NULL
+\begin{DoxyCompactList}\small\item\em Manejadores (handles) de las tareas creadas. \end{DoxyCompactList}\item 
+Task\+Handle\+\_\+t \mbox{\hyperlink{guia2__ej4_8c_a2c75b4f34726e9b7a8dd42ca7fa1d31d}{main\+\_\+task\+\_\+handle}} = NULL
+\begin{DoxyCompactList}\small\item\em Handle de la tarea que genera y muestra el ECG simulado por DAC. \end{DoxyCompactList}\item 
+const char \mbox{\hyperlink{guia2__ej4_8c_a2dafb8b8179af8e9f4cc4df3f588e42e}{ecg}} \mbox{[}\mbox{\hyperlink{guia2__ej4_8c_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}\mbox{]}
+\begin{DoxyCompactList}\small\item\em Arreglo con los valores de la señal ECG simulada (de 8 bits). \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\label{doc-define-members}
+\Hypertarget{guia2__ej4_8c_doc-define-members}
+\doxysubsection{Macro Definition Documentation}
+\Hypertarget{guia2__ej4_8c_a6b20d41d6252e9871430c242cb1a56e7}\index{guia2\_ej4.c@{guia2\_ej4.c}!BUFFER\_SIZE@{BUFFER\_SIZE}}
+\index{BUFFER\_SIZE@{BUFFER\_SIZE}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{BUFFER\_SIZE}{BUFFER\_SIZE}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a6b20d41d6252e9871430c242cb1a56e7} 
+\#define BUFFER\+\_\+\+SIZE~231}
+
+
+
+Tamaño del buffer que almacena una señal ECG simulada. 
+
+Se trata de un conjunto de 231 muestras que simulan un ciclo de una señal ECG. 
+
+\label{doc-func-members}
+\Hypertarget{guia2__ej4_8c_doc-func-members}
+\doxysubsection{Function Documentation}
+\Hypertarget{guia2__ej4_8c_a630544a7f0a2cc40d8a7fefab7e2fe70}\index{guia2\_ej4.c@{guia2\_ej4.c}!app\_main@{app\_main}}
+\index{app\_main@{app\_main}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{app\_main()}{app\_main()}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a630544a7f0a2cc40d8a7fefab7e2fe70} 
+void app\+\_\+main (\begin{DoxyParamCaption}\item[{void}]{}{}\end{DoxyParamCaption})}
+
+
+
+Función principal de la aplicación (punto de entrada de Free\+RTOS). 
+
+Aquí se inicializan los periféricos, temporizadores y tareas. \Hypertarget{guia2__ej4_8c_af32e2cabf3d779c20cdc13706026393a}\index{guia2\_ej4.c@{guia2\_ej4.c}!Funcion@{Funcion}}
+\index{Funcion@{Funcion}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{Funcion()}{Funcion()}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_af32e2cabf3d779c20cdc13706026393a} 
+void Funcion (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Tarea de adquisición y transmisión serie. 
+
+Esta tarea se bloquea hasta recibir una notificación del temporizador A. Cada vez que se activa\+:
+\begin{DoxyItemize}
+\item Lee un valor analógico desde CH1 mediante el ADC.
+\item Convierte ese valor a texto (itoa).
+\item Lo envía a través del puerto serie UART hacia la PC. 
+\end{DoxyItemize}\Hypertarget{guia2__ej4_8c_afaccfed84cd1498a05ea04a65f1209b1}\index{guia2\_ej4.c@{guia2\_ej4.c}!FuncTimerA@{FuncTimerA}}
+\index{FuncTimerA@{FuncTimerA}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{FuncTimerA()}{FuncTimerA()}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_afaccfed84cd1498a05ea04a65f1209b1} 
+void Func\+TimerA (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Callback de interrupción del temporizador A. 
+
+Envía una notificación a la tarea encargada de leer la entrada analógica. Esta función {\bfseries{no bloquea}} y debe ser lo más breve posible. \Hypertarget{guia2__ej4_8c_a5088c3325764095ca222dc78c328f466}\index{guia2\_ej4.c@{guia2\_ej4.c}!FuncTimerB@{FuncTimerB}}
+\index{FuncTimerB@{FuncTimerB}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{FuncTimerB()}{FuncTimerB()}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a5088c3325764095ca222dc78c328f466} 
+void Func\+TimerB (\begin{DoxyParamCaption}\item[{void \texorpdfstring{$\ast$}{*}}]{param}{}\end{DoxyParamCaption})}
+
+
+
+Callback de interrupción del temporizador B. 
+
+Envía una notificación a la tarea encargada de mostrar la señal ECG simulada. \Hypertarget{guia2__ej4_8c_a3a20e1af53ab1822346d9d22b8de4062}\index{guia2\_ej4.c@{guia2\_ej4.c}!mostrarecg@{mostrarecg}}
+\index{mostrarecg@{mostrarecg}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{mostrarecg()}{mostrarecg()}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a3a20e1af53ab1822346d9d22b8de4062} 
+void mostrarecg (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})}
+
+
+
+Tarea que genera la señal ECG simulada en la salida analógica. 
+
+Se bloquea hasta recibir una notificación del temporizador B. Luego\+:
+\begin{DoxyItemize}
+\item Toma el siguiente valor del arreglo {\ttfamily ecg\mbox{[}\mbox{]}}
+\item Lo escribe en el DAC (salida analógica)
+\item Cuando llega al final del arreglo, vuelve al inicio (señal periódica) 
+\end{DoxyItemize}
+
+\label{doc-var-members}
+\Hypertarget{guia2__ej4_8c_doc-var-members}
+\doxysubsection{Variable Documentation}
+\Hypertarget{guia2__ej4_8c_a1ebeb409da0781146e9ef82dda2528d0}\index{guia2\_ej4.c@{guia2\_ej4.c}!cambio@{cambio}}
+\index{cambio@{cambio}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{cambio}{cambio}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a1ebeb409da0781146e9ef82dda2528d0} 
+Task\+Handle\+\_\+t cambio = NULL}
+
+
+
+Manejadores (handles) de las tareas creadas. 
+
+Se utilizan para enviar notificaciones desde las interrupciones de los temporizadores. Handle de la tarea encargada de leer el ADC y enviar por UART. \Hypertarget{guia2__ej4_8c_a2dafb8b8179af8e9f4cc4df3f588e42e}\index{guia2\_ej4.c@{guia2\_ej4.c}!ecg@{ecg}}
+\index{ecg@{ecg}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{ecg}{ecg}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a2dafb8b8179af8e9f4cc4df3f588e42e} 
+const char ecg\mbox{[}\mbox{\hyperlink{guia2__ej4_8c_a6b20d41d6252e9871430c242cb1a56e7}{BUFFER\+\_\+\+SIZE}}\mbox{]}}
+
+{\bfseries Initial value\+:}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{=\ \{}
+\DoxyCodeLine{\ \ \ \ 76,\ 77,\ 78,\ 77,\ 79,\ 86,\ 81,\ 76,\ 84,\ 93,\ 85,\ 80,}
+\DoxyCodeLine{\ \ \ \ 89,\ 95,\ 89,\ 85,\ 93,\ 98,\ 94,\ 88,\ 98,\ 105,\ 96,\ 91,}
+\DoxyCodeLine{\ \ \ \ 99,\ 105,\ 101,\ 96,\ 102,\ 106,\ 101,\ 96,\ 100,\ 107,\ 101,}
+\DoxyCodeLine{\ \ \ \ 94,\ 100,\ 104,\ 100,\ 91,\ 99,\ 103,\ 98,\ 91,\ 96,\ 105,\ 95,}
+\DoxyCodeLine{\ \ \ \ 88,\ 95,\ 100,\ 94,\ 85,\ 93,\ 99,\ 92,\ 84,\ 91,\ 96,\ 87,\ 80,}
+\DoxyCodeLine{\ \ \ \ 83,\ 92,\ 86,\ 78,\ 84,\ 89,\ 79,\ 73,\ 81,\ 83,\ 78,\ 70,\ 80,\ 82,}
+\DoxyCodeLine{\ \ \ \ 79,\ 69,\ 80,\ 82,\ 81,\ 70,\ 75,\ 81,\ 77,\ 74,\ 79,\ 83,\ 82,\ 72,}
+\DoxyCodeLine{\ \ \ \ 80,\ 87,\ 79,\ 76,\ 85,\ 95,\ 87,\ 81,\ 88,\ 93,\ 88,\ 84,\ 87,\ 94,}
+\DoxyCodeLine{\ \ \ \ 86,\ 82,\ 85,\ 94,\ 85,\ 82,\ 85,\ 95,\ 86,\ 83,\ 92,\ 99,\ 91,\ 88,}
+\DoxyCodeLine{\ \ \ \ 94,\ 98,\ 95,\ 90,\ 97,\ 105,\ 104,\ 94,\ 98,\ 114,\ 117,\ 124,\ 144,}
+\DoxyCodeLine{\ \ \ \ 180,\ 210,\ 236,\ 253,\ 227,\ 171,\ 99,\ 49,\ 34,\ 29,\ 43,\ 69,\ 89,}
+\DoxyCodeLine{\ \ \ \ 89,\ 90,\ 98,\ 107,\ 104,\ 98,\ 104,\ 110,\ 102,\ 98,\ 103,\ 111,\ 101,}
+\DoxyCodeLine{\ \ \ \ 94,\ 103,\ 108,\ 102,\ 95,\ 97,\ 106,\ 100,\ 92,\ 101,\ 103,\ 100,\ 94,\ 98,}
+\DoxyCodeLine{\ \ \ \ 103,\ 96,\ 90,\ 98,\ 103,\ 97,\ 90,\ 99,\ 104,\ 95,\ 90,\ 99,\ 104,\ 100,\ 93,}
+\DoxyCodeLine{\ \ \ \ 100,\ 106,\ 101,\ 93,\ 101,\ 105,\ 103,\ 96,\ 105,\ 112,\ 105,\ 99,\ 103,\ 108,}
+\DoxyCodeLine{\ \ \ \ 99,\ 96,\ 102,\ 106,\ 99,\ 90,\ 92,\ 100,\ 87,\ 80,\ 82,\ 88,\ 77,\ 69,\ 75,\ 79,}
+\DoxyCodeLine{\ \ \ \ 74,\ 67,\ 71,\ 78,\ 72,\ 67,\ 73,\ 81,\ 77,\ 71,\ 75,\ 84,\ 79,\ 77,\ 77,\ 76,\ 76,}
+\DoxyCodeLine{\}}
+
+\end{DoxyCode}
+
+
+Arreglo con los valores de la señal ECG simulada (de 8 bits). 
+
+Estos valores se envían secuencialmente al DAC para reconstruir la forma de onda. \Hypertarget{guia2__ej4_8c_a2c75b4f34726e9b7a8dd42ca7fa1d31d}\index{guia2\_ej4.c@{guia2\_ej4.c}!main\_task\_handle@{main\_task\_handle}}
+\index{main\_task\_handle@{main\_task\_handle}!guia2\_ej4.c@{guia2\_ej4.c}}
+\doxysubsubsection{\texorpdfstring{main\_task\_handle}{main\_task\_handle}}
+{\footnotesize\ttfamily \label{guia2__ej4_8c_a2c75b4f34726e9b7a8dd42ca7fa1d31d} 
+Task\+Handle\+\_\+t main\+\_\+task\+\_\+handle = NULL}
+
+
+
+Handle de la tarea que genera y muestra el ECG simulado por DAC. 
+

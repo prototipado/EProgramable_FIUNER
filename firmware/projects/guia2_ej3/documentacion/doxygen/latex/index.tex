@@ -1,0 +1,46 @@
+\chapter{Sensor de distancia ultrasónico con Free\+RTOS }
+\hypertarget{index}{}\label{index}\index{Sensor de distancia ultrasónico con FreeRTOS@{Sensor de distancia ultrasónico con FreeRTOS}}
+\hypertarget{index_genDesc}{}\doxysection{\texorpdfstring{Descripción general}{Descripción general}}\label{index_genDesc}
+Este programa utiliza Free\+RTOS para gestionar tareas relacionadas con la medición de distancia mediante un sensor ultrasónico {\bfseries{HC-\/\+SR04}}, junto con el control de {\bfseries{LEDs indicadores}}, una {\bfseries{pantalla LCD}} y comunicación {\bfseries{UART}}.
+
+El sistema emplea temporizadores e interrupciones para sincronizar las tareas, mientras que los {\bfseries{switches}} y la {\bfseries{UART}} permiten modificar el modo de funcionamiento\+:
+\begin{DoxyItemize}
+\item {\bfseries{Encendido/\+Apagado}} del sistema.
+\item {\bfseries{Hold}} para mantener el valor actual de distancia en pantalla.
+\end{DoxyItemize}
+
+\href{https://drive.google.com/...}{\texttt{Ejemplo de operación}}\hypertarget{index_hardConn}{}\doxysection{\texorpdfstring{Conexiones de hardware}{Conexiones de hardware}}\label{index_hardConn}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Periférico  }&\cellcolor{\tableheadbgcolor}\textbf{ ESP32 (GPIO)  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Periférico  }&\cellcolor{\tableheadbgcolor}\textbf{ ESP32 (GPIO)  }\\\cline{1-2}
+\endhead
+SENSOR\+\_\+\+TRIG  &GPIO\+\_\+3  \\\cline{1-2}
+SENSOR\+\_\+\+ECHO  &GPIO\+\_\+2  \\\cline{1-2}
+SWITCH\+\_\+1  &GPIO\+\_\+X  \\\cline{1-2}
+SWITCH\+\_\+2  &GPIO\+\_\+Y  \\\cline{1-2}
+LED\+\_\+1  &GPIO\+\_\+A  \\\cline{1-2}
+LED\+\_\+2  &GPIO\+\_\+B  \\\cline{1-2}
+LED\+\_\+3  &GPIO\+\_\+C  \\\cline{1-2}
+LCD  &GPIO\+\_\+D  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{index_changelog}{}\doxysection{\texorpdfstring{Historial de cambios}{Historial de cambios}}\label{index_changelog}
+\tabulinesep=1mm
+\begin{longtabu}spread 0pt [c]{*{2}{|X[-1]}|}
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Fecha  }&\cellcolor{\tableheadbgcolor}\textbf{ Descripción  }\\\cline{1-2}
+\endfirsthead
+\hline
+\endfoot
+\hline
+\cellcolor{\tableheadbgcolor}\textbf{ Fecha  }&\cellcolor{\tableheadbgcolor}\textbf{ Descripción  }\\\cline{1-2}
+\endhead
+1/10/2025  &Creación del documento para el ejercicio 3  \\\cline{1-2}
+\end{longtabu}
+\hypertarget{index_author}{}\doxysection{\texorpdfstring{Autor}{Autor}}\label{index_author}
+Angeles Perez (\href{mailto:maria.perez@ingenieria.uner.edu.ar}{\texttt{maria.\+perez@ingenieria.\+uner.\+edu.\+ar}}) 
