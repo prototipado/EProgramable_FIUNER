@@ -81,7 +81,7 @@ Para su instalación siga los siguietes pasos:
     ![idf5](./imágenes/idf5.png)
 
 > [!IMPORTANT]
-> Asegúrese que los path de la carpeta de instalación no contenga `espacio` o la letra `ñ`.
+> Asegúrese que los path de la carpeta de instalación no contenga `espacio`, la letra `ñ` o letras con tilde `á`, `é`, `í`, `ó`, `ú`.
 
 8. La instalación demorará varios minutos. Una vez completada podrá observar un mensaje indicando la instalación ha sido completada. Ya puede cerrar la ventana del instalador.
 
