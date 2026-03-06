@@ -59,33 +59,34 @@ Para su instalación siga los siguietes pasos:
 
     ![idf1](./imágenes/idf1.png)
 
-4. Seleccionar el menú "View" -> "Command Palette" y escribir `configure esp-idf`.
+4. Una vez instalada, podrá ver un nuevo ícono en la barra de herramientas: ![idf2](./imágenes/esp-idf_logo.svg) ESP-IDF Explorer. Diríjase a esa vista y haga clic en `Advanced` -> `Open ESP-IDF Instalation Manager`.
 
     ![idf2](./imágenes/idf2.png)
 
-5. Elegir la opción `ESP-IDF: Configure ESP-IDF Extension`.
+5. Se abrirá la aplicación `ESP-IDF Instalation Manager`. Hacer click en  `Start Installation`.
 
     ![idf3](./imágenes/idf3.png)
 
-6. En el menú siguiente seleccionar la opción `Express`.
+6. En el menú siguiente seleccionar la opción `Start Easy Installation`.
 
     ![idf4](./imágenes/idf4.png)
 
-7. A continuación se le mostrarán las opciones de instalación:
-   - Versión: seleccionar `v5.1.2` o superior.
+7. A continuación se le mostrarán la información de la instalación:
+   - Versión: `v5.5.3` o superior.
    - Directorio de ESP-IDF: por defecto `%USERPROFILE%\esp`
-   - Directorio de ESP-IDF Tools:  por defecto `%USERPROFILE%\.espressif`
+   - Tamaño estimado:  son necesarios al menos `3.5GB`.
 
-    Una vez seleccionadas presione el botón `Install`.
+    Una vez verificada la información, haga clic en `Start Installation`.
 
     ![idf5](./imágenes/idf5.png)
 
 > [!IMPORTANT]
-> Asegúrese que los path de ambas carpetas no contengan `espacio` o la letra `ñ`.
+> Asegúrese que los path de la carpeta de instalación no contenga `espacio` o la letra `ñ`.
 
-8. La instalación demorará varios minutos. Una vez completada podrá observar un mensaje indicando que todos los ajustes han sido configurados.
+8. La instalación demorará varios minutos. Una vez completada podrá observar un mensaje indicando la instalación ha sido completada. Ya puede cerrar la ventana del instalador.
 
     ![idf6](./imágenes/idf6.png)
+    ![idf6](./imágenes/idf7.png)
 
 ## C/C++ Extension
 

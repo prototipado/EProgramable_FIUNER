@@ -7,7 +7,7 @@ A continuación se detallan los pasos para la compilación del primer proyecto d
 1. En **Visual Studio Code** seleccionar el menú File -> Open Workspace from File...
     ![workspace1](./imágenes/workspace1.png)
 
-2. Seleccione el archivo `EProgramable_C6` ubicado en la carpeta `firmware` de su repositorio, por ejemplo: `C:/Repositorios/Penalva_2C_2024/firmware/`.
+2. Seleccione el archivo `EProgramable_C6` ubicado en la carpeta `firmware` de su repositorio, por ejemplo: `C:/Repositorios/Penalva_1C_2026/firmware/`.
     ![workspace2](./imágenes/workspace2.png)
 
 3. Se le mostrará una ventana preguntando si confía en los autores de estos archivos. Seleccione la opción `Yes, I trust the authors`.
@@ -16,6 +16,8 @@ A continuación se detallan los pasos para la compilación del primer proyecto d
     - drivers: carpeta que contiene los drivers del microcontrolador y dispositivos.
     - 0_binking: proyecto de ejemplo.
     - 1_binking_switch: proyecto de ejemplo.
+    - 2_binking_task: proyecto de ejemplo.
+    - 3_binking_timer: proyecto de ejemplo.
     - x_template: plantilla a partir de la cual crear nuevos proyectos.
 
     ![workspace3](./imágenes/workspace3.png)
