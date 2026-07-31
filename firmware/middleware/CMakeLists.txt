@@ -201,4 +201,4 @@ set(priv_include_dirs       "signal_processing/esp-dsp/modules/dotprod/float"
 
 idf_component_register(SRCS ${srcs}
                        INCLUDE_DIRS ${includes}
-                       REQUIRES driver)
+                       )

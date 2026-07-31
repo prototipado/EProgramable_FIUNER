@@ -118,7 +118,7 @@ void ekf_imu13states::Test()
 void ekf_imu13states::TestFull(bool enable_att)
 {
     int total_N = 2048;
-    float pi = std::atan(1) * 4;
+    float pi = atanf(1.0f) * 4.0f;
     float gyro_err_data[] = {0.1, 0.2, 0.3}; // static constatnt error
     dspm::Mat gyro_err(gyro_err_data, 3, 1);
     float R[10];
@@ -151,9 +151,9 @@ void ekf_imu13states::TestFull(bool enable_att)
         }
         gyro_data *= 0; // reset gyro value
         if ((n >= (total_N / 2)) && (n < total_N * 12)) {
-            gyro_data(0, 0) = 1 / pi * std::cos(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
-            gyro_data(1, 0) = 2 / pi * std::cos(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
-            gyro_data(2, 0) = 3 / pi * std::cos(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
+            gyro_data(0, 0) = 1 / pi * cosf(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
+            gyro_data(1, 0) = 2 / pi * cosf(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
+            gyro_data(2, 0) = 3 / pi * cosf(-pi / 2 + pi / 2 * count * 2 / (total_N / 10));
             count++;
         }
         dspm::Mat gyro_sample = gyro_data + gyro_err;
