@@ -14,7 +14,6 @@
 #include "math.h"
 #include <string.h>
 /*==================[macros and definitions]=================================*/
-#define I2C_NUM I2C_NUM_0
 
 /*==================[internal data definition]===============================*/
 uint8_t devAddr;
@@ -23,22 +22,9 @@ uint8_t buffer[14];
 
 /*==================[external functions definition]==========================*/
 void MPU6050_ReadRegister(uint8_t reg, uint8_t *data, uint8_t len){
-	uint8_t dev = 0x68;
-	i2c_cmd_handle_t cmd;
-	I2C_SelectRegister(dev, reg);
-
-	cmd = i2c_cmd_link_create();
-	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (dev << 1) | I2C_MASTER_READ, 1));
-
-	if(len>1)
-		ESP_ERROR_CHECK(i2c_master_read(cmd, data, len, I2C_MASTER_ACK));
-
-	ESP_ERROR_CHECK(i2c_master_read_byte(cmd, data+len-1, I2C_MASTER_NACK));
-
-	ESP_ERROR_CHECK(i2c_master_stop(cmd));
-	ESP_ERROR_CHECK(i2c_master_cmd_begin(I2C_NUM, cmd, 1000));
-	i2c_cmd_link_delete(cmd);
+    if (data != NULL && len > 0) {
+        I2C_readBytes(devAddr, reg, len, data, I2C_MASTER_TIMEOUT_MS);
+    }
 }
 
 void MPU6050_Address(uint8_t address) {

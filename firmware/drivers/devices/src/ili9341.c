@@ -16,7 +16,7 @@
 #include "gpio_mcu.h"
 #include "delay_mcu.h"
 /*==================[macros and definitions]=================================*/
-#define NULL 0
+#define ZERO 0
 
 #define SPI_BR 20000000				/*!< Frequency of sck for SPI communication */
 #define MAX_PIXEL 320*240*2			/*!< Maximum number of bytes to write on LCD */
@@ -167,20 +167,20 @@ lcd_cmd_t lcd_init[] = {
 	{NEG_GAMMA, 15, neg_gamma},
 };
 
-lcd_cmd_t lcd_reset = {RESET, NULL, NULL};			/*!< SW reset */
-lcd_cmd_t lcd_sleep_out = {SLEEP_OUT, NULL, NULL};	/*!< Exit sleep mode */
-lcd_cmd_t lcd_on = {DISPLAY_ON, NULL, NULL};		/*!< Exit sleep mode */
+lcd_cmd_t lcd_reset = {RESET, ZERO, ZERO};			/*!< SW reset */
+lcd_cmd_t lcd_sleep_out = {SLEEP_OUT, ZERO, ZERO};	/*!< Exit sleep mode */
+lcd_cmd_t lcd_on = {DISPLAY_ON, ZERO, ZERO};		/*!< Exit sleep mode */
 
 /*
  * @brief: SPI port configuration compatible with LCD interface
  */
 spi_mcu_config_t spi_conf = {
-	.device = NULL, 
+	.device = ZERO, 
 	.clk_mode = MODE0, 
 	.bitrate = SPI_BR, 
 	.transfer_mode = SPI_POLLING, 
-	.func_p = NULL,
-	.param_p = NULL };
+	.func_p = ZERO,
+	.param_p = ZERO };
 
 static spi_dev_t ili9341_spi;				/*!< uC SPI port */
 static gpio_t ili9341_dc, ili9341_rst;		/*!< uC GPIO ports to use as CS, DC and RST */
@@ -195,14 +195,14 @@ static orientation_properties_t lcd_orientation = {
 
 void WriteLCD(lcd_cmd_t * data){
 	SpiInit(&spi_conf);
-	/* If command is NULL don't send command */
-	if (data->cmd != NULL){
+	/* If command is ZERO don't send command */
+	if (data->cmd != ZERO){
 		/* Send command */
 		GPIOOff(ili9341_dc);
 		SpiWrite(ili9341_spi, &data->cmd, 1);
 	}
 	/* If there are parameters or data to send */
-	if (data->databytes != NULL){
+	if (data->databytes != ZERO){
 		/* Send parameters or data */
 		GPIOOn(ili9341_dc);
 		SpiWrite(ili9341_spi, data->data, data->databytes);
@@ -255,15 +255,15 @@ void Fill(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1, uint16_t color){
 		pixel[i + 1] = LowByte(color);
 	}
 	/* Start writing LCD memory */
-	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
+	lcd_cmd_t lcd_write = {MEM_WRITE, ZERO, ZERO};
 	WriteLCD(&lcd_write);
 
 	while(bytes_count - MAX_VALUE_SIZE > 0){
-		lcd_cmd_t lcd_pixel = {NULL, MAX_VALUE_SIZE, pixel};
+		lcd_cmd_t lcd_pixel = {ZERO, MAX_VALUE_SIZE, pixel};
 		WriteLCD(&lcd_pixel);
 		bytes_count -= MAX_VALUE_SIZE;
 	}
-	lcd_cmd_t lcd_pixel = {NULL, bytes_count, pixel};
+	lcd_cmd_t lcd_pixel = {ZERO, bytes_count, pixel};
 	WriteLCD(&lcd_pixel);
 }
 
@@ -372,7 +372,7 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
 	bytes_count = font->font_height * font->info[data - ' '].width * 2;
 
 	/* Start writing LCD memory */
-	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
+	lcd_cmd_t lcd_write = {MEM_WRITE, ZERO, ZERO};
 	WriteLCD(&lcd_write);
 
 	/* Draw font data */
@@ -389,7 +389,7 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
 			}
 			/* If exceed buffer size, send buffer */
 			if ((2 * j + i * font->info[data - ' '].width * 2 - k * MAX_VALUE_SIZE + 1) > MAX_VALUE_SIZE){
-				lcd_cmd_t lcd_pixels = {NULL, MAX_VALUE_SIZE, pixel};
+				lcd_cmd_t lcd_pixels = {ZERO, MAX_VALUE_SIZE, pixel};
 				WriteLCD(&lcd_pixels);
 				bytes_count -= MAX_VALUE_SIZE;
 				k++;
@@ -407,7 +407,7 @@ void ILI9341DrawChar(uint16_t x, uint16_t y, char data, Font_t* font, uint16_t f
 		}
 	}
 	/* Send the rest of the buffer */
-	lcd_cmd_t lcd_pixels = {NULL, bytes_count, pixel};
+	lcd_cmd_t lcd_pixels = {ZERO, bytes_count, pixel};
 	WriteLCD(&lcd_pixels);
 }
 
@@ -434,7 +434,7 @@ void ILI9341DrawIcon(uint16_t x, uint16_t y, icon_t icon, icon_font_t* icon_font
 	bytes_count = icon_font->height * icon_font->width * 2;
 
 	/* Start writing LCD memory */
-	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
+	lcd_cmd_t lcd_write = {MEM_WRITE, ZERO, ZERO};
 	WriteLCD(&lcd_write);
 
 	/* Draw font data */
@@ -451,7 +451,7 @@ void ILI9341DrawIcon(uint16_t x, uint16_t y, icon_t icon, icon_font_t* icon_font
 			}
 			/* If exceed buffer size, send buffer */
 			if ((2 * j + i * icon_font->width * 2 - k * MAX_VALUE_SIZE + 1) > MAX_VALUE_SIZE){
-				lcd_cmd_t lcd_pixels = {NULL, MAX_VALUE_SIZE, pixel};
+				lcd_cmd_t lcd_pixels = {ZERO, MAX_VALUE_SIZE, pixel};
 				WriteLCD(&lcd_pixels);
 				bytes_count -= MAX_VALUE_SIZE;
 				k++;
@@ -469,7 +469,7 @@ void ILI9341DrawIcon(uint16_t x, uint16_t y, icon_t icon, icon_font_t* icon_font
 		}
 	}
 	/* Send the rest of the buffer */
-	lcd_cmd_t lcd_pixels = {NULL, bytes_count, pixel};
+	lcd_cmd_t lcd_pixels = {ZERO, bytes_count, pixel};
 	WriteLCD(&lcd_pixels);
 }
 
@@ -810,7 +810,7 @@ void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t height,
 	bytes_count = width * height * 2;
 
 	/* Start writing LCD memory */
-	lcd_cmd_t lcd_write = {MEM_WRITE, NULL, NULL};
+	lcd_cmd_t lcd_write = {MEM_WRITE, ZERO, ZERO};
 	WriteLCD(&lcd_write);
 
 	j = 0;
@@ -818,7 +818,7 @@ void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t height,
 		for (i = 0; i < MAX_VALUE_SIZE; i++){
 			pixel[i] = pic[j * MAX_VALUE_SIZE + i];
 		}
-		lcd_cmd_t lcd_pixel = {NULL, MAX_VALUE_SIZE, pixel};
+		lcd_cmd_t lcd_pixel = {ZERO, MAX_VALUE_SIZE, pixel};
 		WriteLCD(&lcd_pixel);
 		bytes_count -= MAX_VALUE_SIZE;
 		j++;
@@ -826,7 +826,7 @@ void ILI9341DrawPicture(uint16_t x, uint16_t y, uint16_t width, uint16_t height,
 	for (i = 0; i < bytes_count; i++){
 		pixel[i] = pic[j * MAX_VALUE_SIZE + i];
 	}
-	lcd_cmd_t lcd_pixel = {NULL, bytes_count, pixel};
+	lcd_cmd_t lcd_pixel = {ZERO, bytes_count, pixel};
 	WriteLCD(&lcd_pixel);
 }
 

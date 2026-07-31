@@ -14,16 +14,49 @@
 #include <esp_err.h>
 #include <freertos/FreeRTOS.h>
 #include <freertos/task.h>
-//#include "sdkconfig.h"
+#include <string.h>
+#include <stdlib.h>
+#include "driver/i2c_master.h"
 
 #include "i2c_mcu.h"
 /*==================[macros and definitions]=================================*/
-#define I2C_NUM I2C_NUM_0
 
 #undef ESP_ERROR_CHECK
 #define ESP_ERROR_CHECK(x)   do { esp_err_t rc = (x); if (rc != ESP_OK) { ESP_LOGE("err", "esp_err_t = %d", rc); /*assert(0 && #x);*/} } while(0);
 
 /*==================[internal data definition]===============================*/
+static i2c_master_bus_handle_t s_i2c_bus_handle = NULL;
+static uint32_t s_i2c_clock_rate_hz = I2C_MASTER_FREQ_HZ;
+
+/*==================[internal functions declaration]=========================*/
+static esp_err_t i2c_mcu_get_device_handle(uint8_t devAddr, i2c_master_dev_handle_t *ret_handle)
+{
+    i2c_device_config_t dev_cfg = {
+        .dev_addr_length = I2C_ADDR_BIT_LEN_7,
+        .device_address = devAddr,
+        .scl_speed_hz = s_i2c_clock_rate_hz,
+        .scl_wait_us = 0,
+        .flags.disable_ack_check = 0,
+    };
+
+    if (s_i2c_bus_handle == NULL) {
+        return ESP_ERR_INVALID_STATE;
+    }
+
+    return i2c_master_bus_add_device(s_i2c_bus_handle, &dev_cfg, ret_handle);
+}
+
+static void i2c_mcu_release_device_handle(i2c_master_dev_handle_t dev_handle)
+{
+    if (dev_handle != NULL) {
+        i2c_master_bus_rm_device(dev_handle);
+    }
+}
+
+static int i2c_mcu_timeout_ms(uint16_t timeout)
+{
+    return (timeout > 0) ? (int)timeout : I2C_MASTER_TIMEOUT_MS;
+}
 
 /*==================[internal functions declaration]=========================*/
 
@@ -33,22 +66,26 @@
  */
 bool I2C_initialize( uint32_t clockRateHz )
 {
-	int i2c_master_port = I2C_MASTER_NUM;
+    if (s_i2c_bus_handle != NULL) {
+        s_i2c_clock_rate_hz = clockRateHz;
+        return true;
+    }
 
-    i2c_config_t conf = {
-        .mode = I2C_MODE_MASTER,
+    i2c_master_bus_config_t bus_config = {
+        .i2c_port = I2C_MASTER_NUM,
         .sda_io_num = I2C_MASTER_SDA_IO,
         .scl_io_num = I2C_MASTER_SCL_IO,
-        .sda_pullup_en = GPIO_PULLUP_ENABLE,
-        .scl_pullup_en = GPIO_PULLUP_ENABLE,
-        .master.clk_speed = clockRateHz,
+        .clk_source = I2C_CLK_SRC_DEFAULT,
+        .glitch_ignore_cnt = 0,
+        .intr_priority = 0,
+        .trans_queue_depth = 0,
+        .flags.enable_internal_pullup = 1,
     };
 
-    i2c_param_config(i2c_master_port, &conf);
-
-    return i2c_driver_install(i2c_master_port, conf.mode, I2C_MASTER_RX_BUF_DISABLE, I2C_MASTER_TX_BUF_DISABLE, 0);
-	return true;
-};
+    esp_err_t ret = i2c_new_master_bus(&bus_config, &s_i2c_bus_handle);
+    s_i2c_clock_rate_hz = (ret == ESP_OK) ? clockRateHz : I2C_MASTER_FREQ_HZ;
+    return (ret == ESP_OK);
+}
 
 
 
@@ -124,23 +161,21 @@ int8_t I2C_readByte(uint8_t devAddr, uint8_t regAddr, uint8_t *data, uint16_t ti
  * @return I2C_TransferReturn_TypeDef http://downloads.energymicro.com/documentation/doxygen/group__I2C.html
  */
 int8_t I2C_readBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data, uint16_t timeout) {
-	i2c_cmd_handle_t cmd;
-	I2C_SelectRegister(devAddr, regAddr);
+    i2c_master_dev_handle_t dev_handle = NULL;
+    uint8_t register_addr = regAddr;
+    esp_err_t ret = ESP_FAIL;
 
-	cmd = i2c_cmd_link_create();
-	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (devAddr << 1) | I2C_MASTER_READ, 1));
+    if (data == NULL || length == 0) {
+        return 0;
+    }
 
-	if(length>1)
-	ESP_ERROR_CHECK(i2c_master_read(cmd, data, length-1, I2C_MASTER_ACK));
+    ret = i2c_mcu_get_device_handle(devAddr, &dev_handle);
+    if (ret == ESP_OK) {
+        ret = i2c_master_transmit_receive(dev_handle, &register_addr, 1, data, length, i2c_mcu_timeout_ms(timeout));
+    }
 
-	ESP_ERROR_CHECK(i2c_master_read_byte(cmd, data+length-1, I2C_MASTER_NACK));
-
-	ESP_ERROR_CHECK(i2c_master_stop(cmd));
-	ESP_ERROR_CHECK(i2c_master_cmd_begin(I2C_NUM, cmd, 1000/portTICK_PERIOD_MS));
-	i2c_cmd_link_delete(cmd);
-
-	return length;
+    i2c_mcu_release_device_handle(dev_handle);
+    return (ret == ESP_OK) ? length : 0;
 }
 
 bool I2C_writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data){
@@ -151,15 +186,14 @@ bool I2C_writeWord(uint8_t devAddr, uint8_t regAddr, uint16_t data){
 }
 
 void I2C_SelectRegister(uint8_t devAddr, uint8_t reg){
-	i2c_cmd_handle_t cmd;
+    i2c_master_dev_handle_t dev_handle = NULL;
+    esp_err_t ret = i2c_mcu_get_device_handle(devAddr, &dev_handle);
 
-	cmd = i2c_cmd_link_create();
-	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (devAddr << 1) | I2C_MASTER_WRITE, 1));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, reg, 1));
-	ESP_ERROR_CHECK(i2c_master_stop(cmd));
-	ESP_ERROR_CHECK(i2c_master_cmd_begin(I2C_NUM, cmd, 1000/portTICK_PERIOD_MS));
-	i2c_cmd_link_delete(cmd);
+    if (ret == ESP_OK) {
+        ret = i2c_master_transmit(dev_handle, &reg, 1, i2c_mcu_timeout_ms(0));
+    }
+
+    i2c_mcu_release_device_handle(dev_handle);
 }
 
 /** write a single bit in an 8-bit device register.
@@ -212,18 +246,16 @@ bool I2C_writeBits(uint8_t devAddr, uint8_t regAddr, uint8_t bitStart, uint8_t l
  * @return Status of operation (true = success)
  */
 bool I2C_writeByte(uint8_t devAddr, uint8_t regAddr, uint8_t data) {
-	i2c_cmd_handle_t cmd;
+    uint8_t buffer[2] = {regAddr, data};
+    i2c_master_dev_handle_t dev_handle = NULL;
+    esp_err_t ret = i2c_mcu_get_device_handle(devAddr, &dev_handle);
 
-	cmd = i2c_cmd_link_create();
-	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (devAddr << 1) | I2C_MASTER_WRITE, 1));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, regAddr, 1));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, data, 1));
-	ESP_ERROR_CHECK(i2c_master_stop(cmd));
-	ESP_ERROR_CHECK(i2c_master_cmd_begin(I2C_NUM, cmd, 1000/portTICK_PERIOD_MS));
-	i2c_cmd_link_delete(cmd);
+    if (ret == ESP_OK) {
+        ret = i2c_master_transmit(dev_handle, buffer, sizeof(buffer), i2c_mcu_timeout_ms(0));
+    }
 
-	return true;
+    i2c_mcu_release_device_handle(dev_handle);
+    return (ret == ESP_OK);
 }
 
 /** Write single byte to an 8-bit device register.
@@ -234,18 +266,30 @@ bool I2C_writeByte(uint8_t devAddr, uint8_t regAddr, uint8_t data) {
  * @return Status of operation (true = success)
  */
 bool I2C_writeBytes(uint8_t devAddr, uint8_t regAddr, uint8_t length, uint8_t *data){
-	i2c_cmd_handle_t cmd;
+    uint8_t *buffer = NULL;
+    i2c_master_dev_handle_t dev_handle = NULL;
+    esp_err_t ret = ESP_FAIL;
 
-	cmd = i2c_cmd_link_create();
-	ESP_ERROR_CHECK(i2c_master_start(cmd));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, (devAddr << 1) | I2C_MASTER_WRITE, 1));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, regAddr, 1));
-	ESP_ERROR_CHECK(i2c_master_write(cmd, data, length-1, 0));
-	ESP_ERROR_CHECK(i2c_master_write_byte(cmd, data[length-1], 1));
-	ESP_ERROR_CHECK(i2c_master_stop(cmd));
-	i2c_master_cmd_begin(I2C_NUM, cmd, 1000/portTICK_PERIOD_MS);
-	i2c_cmd_link_delete(cmd);
-	return true;
+    if (data == NULL || length == 0) {
+        return false;
+    }
+
+    buffer = (uint8_t *)malloc(length + 1);
+    if (buffer == NULL) {
+        return false;
+    }
+
+    buffer[0] = regAddr;
+    memcpy(&buffer[1], data, length);
+
+    ret = i2c_mcu_get_device_handle(devAddr, &dev_handle);
+    if (ret == ESP_OK) {
+        ret = i2c_master_transmit(dev_handle, buffer, length + 1, i2c_mcu_timeout_ms(0));
+    }
+
+    i2c_mcu_release_device_handle(dev_handle);
+    free(buffer);
+    return (ret == ESP_OK);
 }
 
 

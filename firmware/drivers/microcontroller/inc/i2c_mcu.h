@@ -28,7 +28,6 @@
 #include <stdint.h>
 #include <stdbool.h>
 #include "esp_log.h"
-#include "driver/i2c.h"
 #include "gpio_mcu.h"
 /*==================[macros]=================================================*/
 

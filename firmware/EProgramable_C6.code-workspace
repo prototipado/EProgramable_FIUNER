@@ -4,6 +4,9 @@
             "path": "./drivers"
         },
         {
+            "path": "./middleware"
+        },
+        {
             "path": "./projects/0_blinking"
         },
         {

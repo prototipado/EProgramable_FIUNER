@@ -12,7 +12,8 @@
 /*==================[inclusions]=============================================*/
 #include "rtc_mcu.h"
 #include <stdint.h>
-#include "sys/time.h"
+#include <sys/time.h>
+#include <time.h>
 /*==================[macros and definitions]=================================*/
 
 /*==================[internal data declaration]==============================*/
@@ -27,7 +28,15 @@
 
 /*==================[external functions definition]==========================*/
 bool RtcConfig(rtc_t * rtc){
-    struct tm tm;
+    struct tm tm = {
+        .tm_year = 0,
+        .tm_mon = 0,
+        .tm_mday = 0,
+        .tm_wday = 0,
+        .tm_hour = 0,
+        .tm_min = 0,
+        .tm_sec = 0
+    };
     tm.tm_year = rtc->year;
     if(rtc->month > MAX_MONTH) return false;
     if(rtc->mday > MAX_MDAY) return false;
@@ -42,7 +51,10 @@ bool RtcConfig(rtc_t * rtc){
     tm.tm_min = rtc->min;
     tm.tm_sec = rtc->sec;
     time_t t = mktime(&tm);
-    struct timeval now = { .tv_sec = t };
+    struct timeval now = { 
+        .tv_sec = t, 
+        .tv_usec = 0
+    };
     settimeofday(&now, NULL);
 
     return true;

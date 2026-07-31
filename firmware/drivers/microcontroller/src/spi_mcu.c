@@ -40,13 +40,13 @@ void *spi_1_user_data;	    /*!<  */
 void *spi_2_user_data;	    /*!<  */
 void *spi_3_user_data;	    /*!<  */
 /*==================[internal functions declaration]=========================*/
-static void IRAM_ATTR spi_1_isr(spi_transaction_t *t){
+static void spi_1_isr(spi_transaction_t *t){
 	spi_1_isr_p(spi_1_user_data);
 }
-static void IRAM_ATTR spi_2_isr(spi_transaction_t *t){
+static void spi_2_isr(spi_transaction_t *t){
 	spi_2_isr_p(spi_2_user_data);
 }
-static void IRAM_ATTR spi_3_isr(spi_transaction_t *t){
+static void spi_3_isr(spi_transaction_t *t){
 	spi_3_isr_p(spi_3_user_data);
 }
 /*==================[internal data definition]===============================*/
